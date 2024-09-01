@@ -79,9 +79,7 @@ const ScoreComponent = ({
         borderRadius: "10px",
       }}
     >
-      <h1 style={{ ...slideInProps, color: getColor() }}>
-        Score: {displayScore}
-      </h1>
+      <h1 style={{ color: getColor() }}>Score: {displayScore}</h1>
 
       <div>
         <h3 style={{ color: "#ffffff" }}>Test Yourself</h3>
