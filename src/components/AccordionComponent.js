@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Accordion, Form, Button } from "react-bootstrap";
-import topicsData from "../data.json";
 
-const AccordionComponent = ({ onShowScore, buttons }) => {
+const AccordionComponent = ({ onShowScore, buttons, topicJson, onBack }) => {
   const [topics, setTopics] = useState([]);
   const [projectName, setProjectName] = useState("");
   const [refreshThreshold, setRefreshThreshold] = useState(5);
@@ -10,25 +9,32 @@ const AccordionComponent = ({ onShowScore, buttons }) => {
   const [selectedSubtopics, setSelectedSubtopics] = useState({});
   const accordionRefs = useRef([]); // Array to hold refs for each Accordion.Item
 
+  const storageKey = `selectedSubtopics-${topicJson}`; // Unique storage key for each topic
+
   useEffect(() => {
-    setTopics(topicsData.topics);
-    setProjectName(topicsData.projectName);
-    setRefreshThreshold(topicsData.refreshThreshold);
-    setScoreThresholds(topicsData.scoreThresholds);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `${process.env.PUBLIC_URL}/topics/${topicJson}`
+        );
+        const data = await response.json();
 
-    // Load saved selections from localStorage
-    const savedSelections = JSON.parse(
-      localStorage.getItem("selectedSubtopics")
-    );
-    if (savedSelections) {
-      setSelectedSubtopics(savedSelections);
-    }
-  }, []);
+        setTopics(data.topics);
+        setProjectName(data.projectName);
+        setRefreshThreshold(data.refreshThreshold);
+        setScoreThresholds(data.scoreThresholds);
 
-  const handleReset = () => {
-    setSelectedSubtopics({});
-    localStorage.removeItem("selectedSubtopics");
-  };
+        const savedSelections = JSON.parse(localStorage.getItem(storageKey));
+        if (savedSelections) {
+          setSelectedSubtopics(savedSelections);
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, [topicJson]);
 
   const handleRangeChange = (topicIndex, subtopicIndex, value) => {
     const key = `${topicIndex}-${subtopicIndex}`;
@@ -40,10 +46,7 @@ const AccordionComponent = ({ onShowScore, buttons }) => {
     setSelectedSubtopics(updatedSelections);
 
     // Save to localStorage
-    localStorage.setItem(
-      "selectedSubtopics",
-      JSON.stringify(updatedSelections)
-    );
+    localStorage.setItem(storageKey, JSON.stringify(updatedSelections));
   };
 
   const handleAccordionSelect = (eventKey) => {
@@ -70,6 +73,8 @@ const AccordionComponent = ({ onShowScore, buttons }) => {
           unselectedTopics.push({
             topic: topic.title,
             subtopic: subtopic.name,
+            explanation: subtopic.explanation, // Include explanation if needed
+            quiz: subtopic.quiz, // Include quiz if needed
           });
         }
       });
@@ -153,13 +158,34 @@ const AccordionComponent = ({ onShowScore, buttons }) => {
           style={{
             borderColor: "#ea1953",
             marginRight: "10px",
+            marginTop: "15px",
           }}
         >
-          {"Show My Score"}
+          {buttons.showScore || "Show My Score"}
+        </Button>
+      </div>
+      <div className="text-center">
+        <Button
+          onClick={onBack} // Call the onBack function to navigate back to homepage
+          style={{
+            backgroundColor: "#0056b3",
+            borderColor: "#0056b3",
+            marginTop: "20px",
+          }}
+        >
+          Back to Homepage
         </Button>
         <Button
-          onClick={handleReset}
-          style={{ backgroundColor: "#ff704d", borderColor: "#ff704d" }}
+          onClick={() => {
+            setSelectedSubtopics({});
+            localStorage.removeItem(storageKey);
+          }}
+          style={{
+            backgroundColor: "#ff704d",
+            borderColor: "#ff704d",
+            marginTop: "20px",
+            marginLeft: "10px",
+          }}
         >
           Reset
         </Button>

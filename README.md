@@ -1,6 +1,6 @@
-# My Front-End Score
+# Tech Yourself
 
-My Front-End Score is a comprehensive assessment tool designed for front-end developers to evaluate their skills across essential technologies like HTML, CSS, JavaScript, and more. This tool helps developers and teams identify strengths, address knowledge gaps.
+Tech Yourself is a comprehensive assessment tool designed for web developers to evaluate their skills across essential technologies like HTML, CSS, JavaScript, and more. This tool helps developers and teams identify strengths, address knowledge gaps.
 
 ## Getting Started
 

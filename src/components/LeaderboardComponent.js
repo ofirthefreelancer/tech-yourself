@@ -14,9 +14,8 @@ import {
   ZAxis,
 } from "recharts";
 import CustomTooltip from "./CustomTooltip"; // Ensure the path is correct
-import thresholds from "../data.json"; // Import your scoreThresholds from data.json
 
-const LeaderboardComponent = ({ onGoBack }) => {
+const LeaderboardComponent = ({ onGoBack, scoreThresholds }) => {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
@@ -47,10 +46,10 @@ const LeaderboardComponent = ({ onGoBack }) => {
       color: "#dc3545", // Default to red
     };
 
-    if (entry.score >= thresholds.scoreThresholds.green) {
+    if (entry.score >= scoreThresholds.green) {
       point.color = "#28a745"; // Green
       greenData.push(point);
-    } else if (entry.score >= thresholds.scoreThresholds.yellow) {
+    } else if (entry.score >= scoreThresholds.yellow) {
       point.color = "#ffc107"; // Yellow
       yellowData.push(point);
     } else {
@@ -80,10 +79,10 @@ const LeaderboardComponent = ({ onGoBack }) => {
         style={{
           backgroundColor: "#89045d",
           borderColor: "#89045d",
-          marginTop: "20px",
+          marginTop: "5px",
         }}
       >
-        Back to Quiz
+        Back to Homepage
       </Button>
     </div>
   );

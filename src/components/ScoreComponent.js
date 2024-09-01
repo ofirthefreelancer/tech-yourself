@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Button, Form, Spinner } from "react-bootstrap";
 import { useSpring, animated } from "@react-spring/web";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase"; // Ensure you have the correct path to your firebase.js
+import { db } from "../firebase";
+import QuizModal from "./QuizModal"; // Import the QuizModal component
 
 const ScoreComponent = ({
   score,
@@ -16,6 +17,8 @@ const ScoreComponent = ({
   const [username, setUsername] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [currentSubtopic, setCurrentSubtopic] = useState(null);
 
   useEffect(() => {
     let start = 0;
@@ -38,8 +41,6 @@ const ScoreComponent = ({
     to: { transform: "translateX(0%)" },
   });
 
-  const shareText = `ציון הפרונט-אנד שלי: ${score}\nבדקו גם את שלכם:\n https://my-front-end-score-c4b0aa8d97ee.herokuapp.com/`;
-
   const getColor = () => {
     switch (scoreCategory) {
       case "green":
@@ -50,6 +51,11 @@ const ScoreComponent = ({
       default:
         return "red";
     }
+  };
+
+  const handleSubtopicClick = (subtopic) => {
+    setCurrentSubtopic(subtopic);
+    setShowModal(true);
   };
 
   const submitScore = async () => {
@@ -83,56 +89,52 @@ const ScoreComponent = ({
         Score: {displayScore}
       </animated.h1>
 
-      <div className="mt-4">
-        <h2 style={{ color: "#ffffff" }}>Topics to Refresh:</h2>
+      <div>
+        <h3 style={{ color: "#ffffff" }}>Test Yourself</h3>
         {unselectedTopics.length === 0 ? (
           <p style={{ color: "#ffffff" }}>You've mastered all topics!</p>
         ) : (
           <ul style={{ color: "#ffffff" }} className="uls">
-            {unselectedTopics.map((item, index) => {
-              // Assuming the item.topic contains the first part and item.subtopic the second
-              const topic = item.topic;
-              const subtopic = item.subtopic;
-
-              return (
-                <li key={index}>
-                  <span style={{ color: "yellow", fontWeight: "bold" }}>
-                    {topic}
-                  </span>{" "}
-                  - {subtopic}
-                </li>
-              );
-            })}
+            {unselectedTopics.map((item, index) => (
+              <li key={index} onClick={() => handleSubtopicClick(item)}>
+                <span style={{ color: "yellow", fontWeight: "bold" }}>
+                  {item.topic}
+                </span>{" "}
+                - {item.subtopic}
+              </li>
+            ))}
           </ul>
         )}
       </div>
 
-      <div className="mt-4">
+      <div>
         {!submitted ? (
           !loading ? (
-            <Form>
-              <Form.Group controlId="username">
-                <h2 style={{ color: "#ffffff" }}>Share Score</h2>
-                <Form.Control
-                  type="text"
-                  required
-                  placeholder="LinkedIn User"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                />
-              </Form.Group>
-              <Button
-                variant="primary"
-                onClick={submitScore}
-                style={{
-                  borderColor: "#ea1953",
-                  marginRight: "10px",
-                  marginTop: "15px",
-                }}
-              >
-                Submit Score
-              </Button>
-            </Form>
+            <div>
+              <h3 style={{ color: "#ffffff" }}>Share Score</h3>
+
+              <Form style={{ display: "flex", alignItems: "end" }}>
+                <Form.Group controlId="username">
+                  <Form.Control
+                    type="text"
+                    required
+                    placeholder="LinkedIn User"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                </Form.Group>
+                <Button
+                  variant="primary"
+                  onClick={submitScore}
+                  style={{
+                    marginLeft: "10px",
+                    borderColor: "#ea1953",
+                  }}
+                >
+                  Submit Score
+                </Button>
+              </Form>
+            </div>
           ) : (
             <Spinner
               animation="border"
@@ -146,11 +148,18 @@ const ScoreComponent = ({
           <h3 style={{ color: "green", marginTop: "20px" }}>Submitted!</h3>
         )}
       </div>
-
+      <div className="mt-4 d-flex justify-content-center">
+        <Button
+          onClick={onViewLeaderboard} // Calls the function to view leaderboard
+          style={{ backgroundColor: "#0056b3", borderColor: "#0056b3" }}
+        >
+          View Leaderboard
+        </Button>
+      </div>
       <div className="mt-4 d-flex justify-content-center">
         <Button
           href={`https://www.linkedin.com/shareArticle?mini=true&url=https://my-front-end-score-c4b0aa8d97ee.herokuapp.com&text=${encodeURIComponent(
-            shareText
+            `היי, אחלה יוזמה לכל מפתחי האתרים שביננו!`
           )}`}
           target="_blank"
           style={{
@@ -172,14 +181,14 @@ const ScoreComponent = ({
         >
           {buttons.backToQuiz || "Back to Quiz"}
         </Button>
-
-        <Button
-          onClick={onViewLeaderboard} // Calls the function to view leaderboard
-          style={{ backgroundColor: "#0056b3", borderColor: "#0056b3" }}
-        >
-          View Leaderboard
-        </Button>
       </div>
+
+      {/* Quiz Modal */}
+      <QuizModal
+        show={showModal}
+        onHide={() => setShowModal(false)}
+        subtopic={currentSubtopic}
+      />
     </div>
   );
 };
