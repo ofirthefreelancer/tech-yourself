@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form, Spinner } from "react-bootstrap";
-import { useSpring, animated } from "@react-spring/web";
+import { animated } from "@react-spring/web";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import QuizModal from "./QuizModal"; // Import the QuizModal component
@@ -35,11 +35,6 @@ const ScoreComponent = ({
 
     return () => clearInterval(interval);
   }, [score]);
-
-  const slideInProps = useSpring({
-    from: { transform: "translateY(-100%)" },
-    to: { transform: "translateX(0%)" },
-  });
 
   const getColor = () => {
     switch (scoreCategory) {
