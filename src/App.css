@@ -1,0 +1,42 @@
+.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+}
+
+.bubble.green {
+  background-color: #28a745;
+}
+
+.bubble.yellow {
+  background-color: #ffc107;
+}
+
+.bubble.red {
+  background-color: #dc3545;
+}
+
+.bubble p {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+.myBubbleUI {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  border-radius: 50px;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
