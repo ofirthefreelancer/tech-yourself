@@ -150,7 +150,7 @@ const ScoreComponent = ({
       </div>
       <div className="mt-4 d-flex justify-content-center">
         <Button
-          href={`https://www.linkedin.com/shareArticle?mini=true&url=https://tech-yourself-3a21a27e08fa.herokuapp.com&text=${encodeURIComponent(
+          href={`https://www.linkedin.com/shareArticle?mini=true&url=https://tech-yourself-ca195c00072a.herokuapp.com&text=${encodeURIComponent(
             `היי, אחלה יוזמה לכל מפתחי האתרים שביננו!`
           )}`}
           target="_blank"
