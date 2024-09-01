@@ -111,6 +111,20 @@ const HomepageComponent = ({ onSelectTopic }) => {
             something amazing together!
             <br />
           </p>{" "}
+          <div className="text-center mb-4">
+            <Button
+              variant="primary"
+              href="https://github.com/ofirthefreelancer/tech-yourself"
+              target="_blank"
+              style={{
+                backgroundColor: "#24292e",
+                borderColor: "#24292e",
+              }}
+            >
+              <i className="fa fa-github" style={{ marginRight: "5px" }}></i>{" "}
+              Fork on GitHub
+            </Button>
+          </div>
         </p>
       </div>
       <Footer />
