@@ -1,0 +1,1440 @@
+{
+  "projectName": "Back-End Yourself",
+  "refreshThreshold": 3,
+  "topics": [
+    {
+      "title": "Server-Side Programming Basics",
+      "subtopics": [
+        {
+          "name": "Introduction to HTTP",
+          "points": 1,
+          "explanation": "HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. It defines the structure of messages and how they are sent and received by servers and clients.",
+          "quiz": [
+            {
+              "question": "What does HTTP stand for?",
+              "options": [
+                "Hypertext Transfer Protocol",
+                "Hypertext Transmission Protocol",
+                "Hyperlink Transfer Protocol"
+              ],
+              "answer": "Hypertext Transfer Protocol"
+            },
+            {
+              "question": "Which HTTP method is used to retrieve data from a server?",
+              "options": ["GET", "POST", "PUT"],
+              "answer": "GET"
+            },
+            {
+              "question": "Which status code indicates a successful HTTP request?",
+              "options": ["200", "404", "500"],
+              "answer": "200"
+            }
+          ]
+        },
+        {
+          "name": "RESTful APIs",
+          "points": 2,
+          "explanation": "RESTful APIs (Representational State Transfer) are a standard way of designing networked applications. They use HTTP methods and are stateless, meaning each request from a client contains all the information the server needs to fulfill it.",
+          "quiz": [
+            {
+              "question": "What does REST stand for?",
+              "options": [
+                "Representational State Transfer",
+                "Remote Service Transfer",
+                "Resource State Transfer"
+              ],
+              "answer": "Representational State Transfer"
+            },
+            {
+              "question": "Which HTTP method is commonly used to update a resource in a RESTful API?",
+              "options": ["PUT", "GET", "DELETE"],
+              "answer": "PUT"
+            },
+            {
+              "question": "Which format is commonly used for data exchange in RESTful APIs?",
+              "options": ["JSON", "HTML", "XML"],
+              "answer": "JSON"
+            }
+          ]
+        },
+        {
+          "name": "Node.js Basics",
+          "points": 3,
+          "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows developers to run JavaScript on the server, enabling full-stack development with a single language.",
+          "quiz": [
+            {
+              "question": "Which engine powers Node.js?",
+              "options": ["V8", "SpiderMonkey", "JavaScriptCore"],
+              "answer": "V8"
+            },
+            {
+              "question": "Which command is used to initialize a new Node.js project?",
+              "options": ["npm init", "node start", "npm start"],
+              "answer": "npm init"
+            },
+            {
+              "question": "Which module in Node.js is used to work with file paths?",
+              "options": ["path", "fs", "url"],
+              "answer": "path"
+            }
+          ]
+        },
+        {
+          "name": "Express.js Basics",
+          "points": 4,
+          "explanation": "Express.js is a fast, unopinionated, minimalist web framework for Node.js. It simplifies the process of building web applications and APIs.",
+          "quiz": [
+            {
+              "question": "Which command is used to install Express.js?",
+              "options": [
+                "npm install express",
+                "npm install node-express",
+                "npm install expressjs"
+              ],
+              "answer": "npm install express"
+            },
+            {
+              "question": "Which method is used to define a GET route in Express.js?",
+              "options": ["app.get()", "app.route()", "app.fetch()"],
+              "answer": "app.get()"
+            },
+            {
+              "question": "Which object represents the request in an Express.js route handler?",
+              "options": ["req", "res", "next"],
+              "answer": "req"
+            }
+          ]
+        },
+        {
+          "name": "Routing in Express.js",
+          "points": 5,
+          "explanation": "Routing in Express.js refers to defining endpoints (URIs) and how they should be handled. It allows the application to respond to different HTTP methods on specific URLs.",
+          "quiz": [
+            {
+              "question": "What is the purpose of routing in Express.js?",
+              "options": [
+                "To define application endpoints and handle HTTP requests",
+                "To connect to a database",
+                "To handle authentication"
+              ],
+              "answer": "To define application endpoints and handle HTTP requests"
+            },
+            {
+              "question": "Which method is used to create a route that handles all HTTP methods?",
+              "options": ["app.all()", "app.use()", "app.route()"],
+              "answer": "app.all()"
+            },
+            {
+              "question": "How can you define a route parameter in Express.js?",
+              "options": ["/:param", "/{param}", "/param"],
+              "answer": "/:param"
+            }
+          ]
+        },
+        {
+          "name": "Middleware in Express.js",
+          "points": 6,
+          "explanation": "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle.",
+          "quiz": [
+            {
+              "question": "What is middleware in Express.js?",
+              "options": [
+                "Functions that have access to req, res, and next",
+                "Database handlers",
+                "API route handlers"
+              ],
+              "answer": "Functions that have access to req, res, and next"
+            },
+            {
+              "question": "Which method is used to add middleware to an Express.js application?",
+              "options": ["app.use()", "app.add()", "app.middleware()"],
+              "answer": "app.use()"
+            },
+            {
+              "question": "How do you end a middleware function?",
+              "options": ["next()", "res.end()", "req.end()"],
+              "answer": "next()"
+            }
+          ]
+        },
+        {
+          "name": "Error Handling",
+          "points": 7,
+          "explanation": "Error handling in Express.js involves catching errors and sending appropriate responses. It ensures that your application can handle unexpected situations gracefully.",
+          "quiz": [
+            {
+              "question": "How do you define an error-handling middleware in Express.js?",
+              "options": [
+                "By using a middleware function with four arguments",
+                "By using a middleware function with three arguments",
+                "By using a middleware function with five arguments"
+              ],
+              "answer": "By using a middleware function with four arguments"
+            },
+            {
+              "question": "Which status code is typically used for a 'Not Found' error?",
+              "options": ["404", "500", "403"],
+              "answer": "404"
+            },
+            {
+              "question": "Which method is used to send a JSON response in Express.js?",
+              "options": ["res.json()", "res.send()", "res.text()"],
+              "answer": "res.json()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Database Fundamentals",
+      "subtopics": [
+        {
+          "name": "SQL Basics",
+          "points": 2,
+          "explanation": "SQL (Structured Query Language) is the standard language for interacting with relational databases. It allows you to create, read, update, and delete data in a database.",
+          "quiz": [
+            {
+              "question": "What does SQL stand for?",
+              "options": [
+                "Structured Query Language",
+                "Simple Query Language",
+                "Sequential Query Language"
+              ],
+              "answer": "Structured Query Language"
+            },
+            {
+              "question": "Which SQL statement is used to fetch data from a database?",
+              "options": ["SELECT", "INSERT", "DELETE"],
+              "answer": "SELECT"
+            },
+            {
+              "question": "Which keyword is used to sort the result-set in SQL?",
+              "options": ["ORDER BY", "SORT BY", "GROUP BY"],
+              "answer": "ORDER BY"
+            }
+          ]
+        },
+        {
+          "name": "NoSQL Basics",
+          "points": 3,
+          "explanation": "NoSQL databases are non-relational databases designed to store, manage, and retrieve large volumes of unstructured data. They are optimized for specific data models and have flexible schemas.",
+          "quiz": [
+            {
+              "question": "What does NoSQL stand for?",
+              "options": [
+                "Not Only SQL",
+                "No Structured Query Language",
+                "No SQL Syntax"
+              ],
+              "answer": "Not Only SQL"
+            },
+            {
+              "question": "Which of the following is a NoSQL database?",
+              "options": ["MongoDB", "MySQL", "PostgreSQL"],
+              "answer": "MongoDB"
+            },
+            {
+              "question": "Which type of NoSQL database is MongoDB?",
+              "options": ["Document-oriented", "Key-value store", "Graph"],
+              "answer": "Document-oriented"
+            }
+          ]
+        },
+        {
+          "name": "Relational Database Design",
+          "points": 4,
+          "explanation": "Relational database design involves structuring data in a way that reduces redundancy and ensures data integrity. It involves designing tables, relationships, and keys.",
+          "quiz": [
+            {
+              "question": "What is a primary key in a relational database?",
+              "options": [
+                "A unique identifier for each record in a table",
+                "A foreign key that links two tables",
+                "A combination of columns that is used to retrieve data"
+              ],
+              "answer": "A unique identifier for each record in a table"
+            },
+            {
+              "question": "What is a foreign key?",
+              "options": [
+                "A key that links records in two tables",
+                "A unique identifier for each record in a table",
+                "A key used to sort data in a table"
+              ],
+              "answer": "A key that links records in two tables"
+            },
+            {
+              "question": "Which normal form eliminates repeating groups?",
+              "options": [
+                "First Normal Form (1NF)",
+                "Second Normal Form (2NF)",
+                "Third Normal Form (3NF)"
+              ],
+              "answer": "First Normal Form (1NF)"
+            }
+          ]
+        },
+        {
+          "name": "MongoDB Basics",
+          "points": 5,
+          "explanation": "MongoDB is a NoSQL database that stores data in JSON-like documents. It provides high performance, high availability, and easy scalability.",
+          "quiz": [
+            {
+              "question": "Which command is used to insert a document into a MongoDB collection?",
+              "options": ["insertOne()", "add()", "put()"],
+              "answer": "insertOne()"
+            },
+            {
+              "question": "Which method is used to query all documents in a MongoDB collection?",
+              "options": ["find()", "search()", "query()"],
+              "answer": "find()"
+            },
+            {
+              "question": "What is the default database in MongoDB?",
+              "options": ["test", "default", "main"],
+              "answer": "test"
+            }
+          ]
+        },
+        {
+          "name": "Using ORMs (e.g., Sequelize, Mongoose)",
+          "points": 6,
+          "explanation": "Object-Relational Mappers (ORMs) like Sequelize (for SQL databases) and Mongoose (for MongoDB) simplify the interaction with databases by allowing you to work with data as objects in your programming language.",
+          "quiz": [
+            {
+              "question": "What is an ORM?",
+              "options": [
+                "A tool to map objects to database tables",
+                "A function to read data from a file",
+                "A service to handle HTTP requests"
+              ],
+              "answer": "A tool to map objects to database tables"
+            },
+            {
+              "question": "Which ORM is commonly used with MongoDB?",
+              "options": ["Mongoose", "Sequelize", "TypeORM"],
+              "answer": "Mongoose"
+            },
+            {
+              "question": "In Sequelize, how do you define a model?",
+              "options": [
+                "sequelize.define()",
+                "sequelize.create()",
+                "sequelize.model()"
+              ],
+              "answer": "sequelize.define()"
+            }
+          ]
+        },
+        {
+          "name": "Database Indexing",
+          "points": 7,
+          "explanation": "Indexing is a technique used to optimize the performance of a database by reducing the amount of time it takes to retrieve data.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of a database index?",
+              "options": [
+                "To speed up data retrieval",
+                "To store data in a table",
+                "To link tables together"
+              ],
+              "answer": "To speed up data retrieval"
+            },
+            {
+              "question": "Which type of index is the default in most databases?",
+              "options": ["B-Tree", "Hash", "Bitmap"],
+              "answer": "B-Tree"
+            },
+            {
+              "question": "What is the downside of creating too many indexes?",
+              "options": [
+                "It can slow down data insertion and updates",
+                "It makes data retrieval slower",
+                "It reduces the storage space"
+              ],
+              "answer": "It can slow down data insertion and updates"
+            }
+          ]
+        },
+        {
+          "name": "Optimizing Database Queries",
+          "points": 8,
+          "explanation": "Optimizing database queries involves techniques to improve the efficiency and speed of queries, such as using indexes, query caching, and optimizing SQL statements.",
+          "quiz": [
+            {
+              "question": "Which technique can improve the performance of a SELECT query?",
+              "options": ["Using an index", "Using JOIN", "Using SELECT *"],
+              "answer": "Using an index"
+            },
+            {
+              "question": "What is query caching?",
+              "options": [
+                "Storing the results of a query for faster access",
+                "Storing the query for future use",
+                "A method to run queries automatically"
+              ],
+              "answer": "Storing the results of a query for faster access"
+            },
+            {
+              "question": "Which SQL clause can improve query performance by limiting the number of rows returned?",
+              "options": ["LIMIT", "GROUP BY", "ORDER BY"],
+              "answer": "LIMIT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Authentication and Authorization",
+      "subtopics": [
+        {
+          "name": "Introduction to Authentication",
+          "points": 3,
+          "explanation": "Authentication is the process of verifying the identity of a user or system. It typically involves verifying credentials such as a username and password.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of authentication?",
+              "options": [
+                "To verify the identity of a user",
+                "To allow users to access resources",
+                "To encrypt data"
+              ],
+              "answer": "To verify the identity of a user"
+            },
+            {
+              "question": "Which protocol is commonly used for secure authentication over the internet?",
+              "options": ["HTTPS", "HTTP", "FTP"],
+              "answer": "HTTPS"
+            },
+            {
+              "question": "Which type of authentication involves sending a one-time code to a user's phone?",
+              "options": [
+                "Two-Factor Authentication (2FA)",
+                "Single Sign-On (SSO)",
+                "Password Authentication"
+              ],
+              "answer": "Two-Factor Authentication (2FA)"
+            }
+          ]
+        },
+        {
+          "name": "JWT (JSON Web Tokens)",
+          "points": 4,
+          "explanation": "JWT (JSON Web Tokens) is a compact, URL-safe means of representing claims to be transferred between two parties. They are commonly used for authentication and information exchange.",
+          "quiz": [
+            {
+              "question": "What does JWT stand for?",
+              "options": [
+                "JSON Web Token",
+                "Java Web Token",
+                "JavaScript Web Token"
+              ],
+              "answer": "JSON Web Token"
+            },
+            {
+              "question": "Which part of a JWT contains the signature?",
+              "options": ["Header", "Payload", "Signature"],
+              "answer": "Signature"
+            },
+            {
+              "question": "Which HTTP header is used to send a JWT in a request?",
+              "options": ["Authorization", "Content-Type", "Accept"],
+              "answer": "Authorization"
+            }
+          ]
+        },
+        {
+          "name": "OAuth 2.0",
+          "points": 5,
+          "explanation": "OAuth 2.0 is an authorization framework that allows third-party applications to obtain limited access to a user's resources without exposing the user's credentials.",
+          "quiz": [
+            {
+              "question": "What does OAuth 2.0 provide?",
+              "options": [
+                "Authorization for third-party applications",
+                "Authentication for users",
+                "Encryption of data"
+              ],
+              "answer": "Authorization for third-party applications"
+            },
+            {
+              "question": "Which component of OAuth 2.0 provides the authorization?",
+              "options": ["Authorization Server", "Resource Server", "Client"],
+              "answer": "Authorization Server"
+            },
+            {
+              "question": "What is an access token in OAuth 2.0?",
+              "options": [
+                "A token that grants access to resources",
+                "A token that verifies the identity of a user",
+                "A token that encrypts data"
+              ],
+              "answer": "A token that grants access to resources"
+            }
+          ]
+        },
+        {
+          "name": "Role-Based Access Control (RBAC)",
+          "points": 6,
+          "explanation": "Role-Based Access Control (RBAC) is a method of regulating access to resources based on the roles assigned to users. It allows for more fine-grained control over what users can do within a system.",
+          "quiz": [
+            {
+              "question": "What does RBAC stand for?",
+              "options": [
+                "Role-Based Access Control",
+                "Resource-Based Access Control",
+                "Rights-Based Access Control"
+              ],
+              "answer": "Role-Based Access Control"
+            },
+            {
+              "question": "What does RBAC allow you to control?",
+              "options": [
+                "What actions users can perform based on their roles",
+                "How users authenticate to a system",
+                "How data is encrypted"
+              ],
+              "answer": "What actions users can perform based on their roles"
+            },
+            {
+              "question": "Which concept is central to RBAC?",
+              "options": ["Roles", "Permissions", "Sessions"],
+              "answer": "Roles"
+            }
+          ]
+        },
+        {
+          "name": "Session Management",
+          "points": 7,
+          "explanation": "Session management refers to the handling of user sessions on a web application, including the creation, maintenance, and termination of sessions.",
+          "quiz": [
+            {
+              "question": "What is a session in web development?",
+              "options": [
+                "A way to store user data across requests",
+                "A method of encrypting data",
+                "A way to authenticate users"
+              ],
+              "answer": "A way to store user data across requests"
+            },
+            {
+              "question": "Which method is commonly used to manage sessions in web applications?",
+              "options": ["Cookies", "Tokens", "Headers"],
+              "answer": "Cookies"
+            },
+            {
+              "question": "What is session expiration?",
+              "options": [
+                "When a session is automatically terminated after a period of inactivity",
+                "When a user logs out of the application",
+                "When a session is created"
+              ],
+              "answer": "When a session is automatically terminated after a period of inactivity"
+            }
+          ]
+        },
+        {
+          "name": "Implementing Secure Password Storage",
+          "points": 8,
+          "explanation": "Secure password storage involves hashing and salting passwords before storing them in a database to protect them from being easily compromised.",
+          "quiz": [
+            {
+              "question": "Which technique is used to securely store passwords?",
+              "options": ["Hashing", "Encoding", "Compressing"],
+              "answer": "Hashing"
+            },
+            {
+              "question": "What is salting in password security?",
+              "options": [
+                "Adding random data to a password before hashing",
+                "Encrypting the password before storage",
+                "Storing the password in plain text"
+              ],
+              "answer": "Adding random data to a password before hashing"
+            },
+            {
+              "question": "Which algorithm is commonly used for hashing passwords?",
+              "options": ["bcrypt", "SHA-1", "MD5"],
+              "answer": "bcrypt"
+            }
+          ]
+        },
+        {
+          "name": "SSO (Single Sign-On)",
+          "points": 9,
+          "explanation": "SSO (Single Sign-On) is an authentication process that allows a user to access multiple applications with one set of login credentials.",
+          "quiz": [
+            {
+              "question": "What does SSO stand for?",
+              "options": ["Single Sign-On", "Secure Sign-On", "Simple Sign-On"],
+              "answer": "Single Sign-On"
+            },
+            {
+              "question": "Which benefit does SSO provide?",
+              "options": [
+                "Reduced need to remember multiple passwords",
+                "Increased security by storing all credentials in one place",
+                "Faster data retrieval"
+              ],
+              "answer": "Reduced need to remember multiple passwords"
+            },
+            {
+              "question": "Which protocol is commonly used for SSO?",
+              "options": ["SAML", "FTP", "SMTP"],
+              "answer": "SAML"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Advanced Server-Side Programming",
+      "subtopics": [
+        {
+          "name": "Asynchronous Programming in Node.js",
+          "points": 3,
+          "explanation": "Asynchronous programming in Node.js allows for non-blocking operations, enabling your code to perform other tasks while waiting for a process to complete.",
+          "quiz": [
+            {
+              "question": "What is the main benefit of asynchronous programming?",
+              "options": [
+                "It allows for non-blocking operations",
+                "It makes code easier to read",
+                "It improves code security"
+              ],
+              "answer": "It allows for non-blocking operations"
+            },
+            {
+              "question": "Which method is commonly used for asynchronous operations in Node.js?",
+              "options": ["Callbacks", "Functions", "Loops"],
+              "answer": "Callbacks"
+            },
+            {
+              "question": "What does the async keyword do in JavaScript?",
+              "options": [
+                "It marks a function as asynchronous",
+                "It stops a function from executing",
+                "It converts synchronous code to asynchronous"
+              ],
+              "answer": "It marks a function as asynchronous"
+            }
+          ]
+        },
+        {
+          "name": "Event-Driven Architecture",
+          "points": 5,
+          "explanation": "Event-driven architecture is a software design pattern in which decoupled components communicate by producing and consuming events.",
+          "quiz": [
+            {
+              "question": "What is an event in event-driven architecture?",
+              "options": [
+                "A message that signals that something has happened",
+                "A function call in the code",
+                "A database operation"
+              ],
+              "answer": "A message that signals that something has happened"
+            },
+            {
+              "question": "Which module in Node.js is used for handling events?",
+              "options": ["events", "http", "fs"],
+              "answer": "events"
+            },
+            {
+              "question": "What is an event emitter in Node.js?",
+              "options": [
+                "An object that emits events",
+                "A function that logs events",
+                "A method that reads files"
+              ],
+              "answer": "An object that emits events"
+            }
+          ]
+        },
+        {
+          "name": "Building RESTful APIs",
+          "points": 6,
+          "explanation": "Building RESTful APIs involves creating web services that adhere to the principles of REST (Representational State Transfer) using HTTP methods and stateless communication.",
+          "quiz": [
+            {
+              "question": "Which HTTP method is used to delete a resource in a RESTful API?",
+              "options": ["DELETE", "GET", "POST"],
+              "answer": "DELETE"
+            },
+            {
+              "question": "What is the typical format for data exchanged in RESTful APIs?",
+              "options": ["JSON", "HTML", "XML"],
+              "answer": "JSON"
+            },
+            {
+              "question": "Which status code indicates a successful resource creation in a RESTful API?",
+              "options": ["201", "200", "204"],
+              "answer": "201"
+            }
+          ]
+        },
+        {
+          "name": "WebSockets and Real-Time Communication",
+          "points": 7,
+          "explanation": "WebSockets provide a full-duplex communication channel over a single, long-lived connection, enabling real-time communication between clients and servers.",
+          "quiz": [
+            {
+              "question": "What is the primary use of WebSockets?",
+              "options": [
+                "Real-time communication",
+                "Batch processing",
+                "File transfers"
+              ],
+              "answer": "Real-time communication"
+            },
+            {
+              "question": "Which protocol do WebSockets use?",
+              "options": ["ws://", "http://", "ftp://"],
+              "answer": "ws://"
+            },
+            {
+              "question": "Which event is fired when a WebSocket connection is established?",
+              "options": ["open", "connect", "ready"],
+              "answer": "open"
+            }
+          ]
+        },
+        {
+          "name": "Microservices Architecture",
+          "points": 4,
+          "explanation": "Microservices architecture is a design pattern where applications are structured as a collection of loosely coupled services, each responsible for a specific business capability.",
+          "quiz": [
+            {
+              "question": "What is the key characteristic of microservices architecture?",
+              "options": [
+                "Loosely coupled, independently deployable services",
+                "Monolithic structure with tight coupling",
+                "Single service responsible for all business capabilities"
+              ],
+              "answer": "Loosely coupled, independently deployable services"
+            },
+            {
+              "question": "Which protocol is commonly used for communication between microservices?",
+              "options": ["HTTP", "SMTP", "FTP"],
+              "answer": "HTTP"
+            },
+            {
+              "question": "What is the advantage of microservices architecture?",
+              "options": [
+                "Scalability and flexibility in development",
+                "Reduced deployment times",
+                "Easier debugging"
+              ],
+              "answer": "Scalability and flexibility in development"
+            }
+          ]
+        },
+        {
+          "name": "API Rate Limiting and Throttling",
+          "points": 5,
+          "explanation": "API rate limiting and throttling are techniques used to control the amount of incoming or outgoing traffic to or from a service, ensuring fair use of resources.",
+          "quiz": [
+            {
+              "question": "What is the purpose of API rate limiting?",
+              "options": [
+                "To control the amount of traffic to a service",
+                "To increase the speed of API requests",
+                "To monitor API usage"
+              ],
+              "answer": "To control the amount of traffic to a service"
+            },
+            {
+              "question": "Which status code is commonly returned when a rate limit is exceeded?",
+              "options": ["429", "403", "500"],
+              "answer": "429"
+            },
+            {
+              "question": "What does API throttling help prevent?",
+              "options": [
+                "Overloading of servers",
+                "Slow API responses",
+                "Incorrect data transmission"
+              ],
+              "answer": "Overloading of servers"
+            }
+          ]
+        },
+        {
+          "name": "Message Queues (e.g., RabbitMQ, Kafka)",
+          "points": 8,
+          "explanation": "Message queues are components used to asynchronously exchange messages between services or processes. RabbitMQ and Kafka are popular message queue systems.",
+          "quiz": [
+            {
+              "question": "What is the primary purpose of a message queue?",
+              "options": [
+                "To facilitate asynchronous communication between services",
+                "To store data in a database",
+                "To monitor service performance"
+              ],
+              "answer": "To facilitate asynchronous communication between services"
+            },
+            {
+              "question": "Which of the following is a message queue system?",
+              "options": ["RabbitMQ", "MySQL", "Redis"],
+              "answer": "RabbitMQ"
+            },
+            {
+              "question": "Which term describes a service that consumes messages from a queue?",
+              "options": ["Consumer", "Producer", "Dispatcher"],
+              "answer": "Consumer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cloud and DevOps Basics",
+      "subtopics": [
+        {
+          "name": "Introduction to Cloud Computing",
+          "points": 4,
+          "explanation": "Cloud computing is the delivery of computing services such as storage, processing, and networking over the internet, allowing for flexible and scalable resource management.",
+          "quiz": [
+            {
+              "question": "What is cloud computing?",
+              "options": [
+                "The delivery of computing services over the internet",
+                "The physical storage of data in data centers",
+                "A type of software development methodology"
+              ],
+              "answer": "The delivery of computing services over the internet"
+            },
+            {
+              "question": "Which of the following is a cloud service provider?",
+              "options": ["AWS", "MySQL", "Apache"],
+              "answer": "AWS"
+            },
+            {
+              "question": "Which cloud model provides on-demand access to computing resources?",
+              "options": ["IaaS", "SaaS", "PaaS"],
+              "answer": "IaaS"
+            }
+          ]
+        },
+        {
+          "name": "Using AWS for Deployment",
+          "points": 5,
+          "explanation": "AWS (Amazon Web Services) offers a suite of cloud computing services, including hosting and deployment solutions, enabling developers to build and deploy applications globally.",
+          "quiz": [
+            {
+              "question": "What does AWS stand for?",
+              "options": [
+                "Amazon Web Services",
+                "Advanced Web Solutions",
+                "Application Web Server"
+              ],
+              "answer": "Amazon Web Services"
+            },
+            {
+              "question": "Which AWS service is commonly used for deploying applications?",
+              "options": ["Elastic Beanstalk", "Lambda", "RDS"],
+              "answer": "Elastic Beanstalk"
+            },
+            {
+              "question": "Which AWS service provides scalable cloud storage?",
+              "options": ["S3", "EC2", "DynamoDB"],
+              "answer": "S3"
+            }
+          ]
+        },
+        {
+          "name": "Docker Basics",
+          "points": 6,
+          "explanation": "Docker is a platform that automates the deployment of applications inside lightweight, portable containers, enabling consistent environments across development and production.",
+          "quiz": [
+            {
+              "question": "What is Docker?",
+              "options": [
+                "A platform for automating application deployment in containers",
+                "A cloud storage service",
+                "A database management system"
+              ],
+              "answer": "A platform for automating application deployment in containers"
+            },
+            {
+              "question": "Which command is used to build a Docker image?",
+              "options": ["docker build", "docker create", "docker run"],
+              "answer": "docker build"
+            },
+            {
+              "question": "What is a Docker container?",
+              "options": [
+                "A lightweight, standalone executable package for running software",
+                "A virtual machine",
+                "A database server"
+              ],
+              "answer": "A lightweight, standalone executable package for running software"
+            }
+          ]
+        },
+        {
+          "name": "Continuous Integration/Continuous Deployment (CI/CD)",
+          "points": 7,
+          "explanation": "CI/CD (Continuous Integration/Continuous Deployment) is a DevOps practice that involves regularly integrating code changes into a shared repository and automatically deploying them to production.",
+          "quiz": [
+            {
+              "question": "What does CI/CD stand for?",
+              "options": [
+                "Continuous Integration/Continuous Deployment",
+                "Code Integration/Code Development",
+                "Continuous Improvement/Continuous Development"
+              ],
+              "answer": "Continuous Integration/Continuous Deployment"
+            },
+            {
+              "question": "Which tool is commonly used for CI/CD pipelines?",
+              "options": ["Jenkins", "Docker", "Apache"],
+              "answer": "Jenkins"
+            },
+            {
+              "question": "What is the main benefit of CI/CD?",
+              "options": [
+                "Faster and more reliable software delivery",
+                "Improved code readability",
+                "Better hardware performance"
+              ],
+              "answer": "Faster and more reliable software delivery"
+            }
+          ]
+        },
+        {
+          "name": "Kubernetes Basics",
+          "points": 8,
+          "explanation": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.",
+          "quiz": [
+            {
+              "question": "What is Kubernetes?",
+              "options": [
+                "An open-source platform for managing containerized applications",
+                "A type of database management system",
+                "A cloud storage solution"
+              ],
+              "answer": "An open-source platform for managing containerized applications"
+            },
+            {
+              "question": "Which component of Kubernetes is responsible for maintaining the desired state of the cluster?",
+              "options": ["Control Plane", "Node", "Pod"],
+              "answer": "Control Plane"
+            },
+            {
+              "question": "What is a pod in Kubernetes?",
+              "options": [
+                "The smallest deployable unit that can contain one or more containers",
+                "A virtual machine instance",
+                "A database schema"
+              ],
+              "answer": "The smallest deployable unit that can contain one or more containers"
+            }
+          ]
+        },
+        {
+          "name": "Infrastructure as Code (IaC) with Terraform",
+          "points": 9,
+          "explanation": "Infrastructure as Code (IaC) is a DevOps practice that involves managing and provisioning computing infrastructure through machine-readable configuration files, rather than physical hardware configuration.",
+          "quiz": [
+            {
+              "question": "What is Infrastructure as Code (IaC)?",
+              "options": [
+                "Managing infrastructure using configuration files",
+                "A programming language for web development",
+                "A method for encrypting data"
+              ],
+              "answer": "Managing infrastructure using configuration files"
+            },
+            {
+              "question": "Which tool is commonly used for IaC?",
+              "options": ["Terraform", "Docker", "Kubernetes"],
+              "answer": "Terraform"
+            },
+            {
+              "question": "What is the main benefit of IaC?",
+              "options": [
+                "Automating the provisioning and management of infrastructure",
+                "Faster application development",
+                "Improved data encryption"
+              ],
+              "answer": "Automating the provisioning and management of infrastructure"
+            }
+          ]
+        },
+        {
+          "name": "Monitoring and Logging",
+          "points": 10,
+          "explanation": "Monitoring and logging are essential practices in DevOps for tracking the performance, availability, and behavior of applications and infrastructure, ensuring issues can be detected and resolved promptly.",
+          "quiz": [
+            {
+              "question": "What is the primary purpose of monitoring in DevOps?",
+              "options": [
+                "Tracking the performance and availability of applications",
+                "Deploying applications to production",
+                "Storing application data"
+              ],
+              "answer": "Tracking the performance and availability of applications"
+            },
+            {
+              "question": "Which tool is commonly used for monitoring?",
+              "options": ["Prometheus", "Terraform", "Docker"],
+              "answer": "Prometheus"
+            },
+            {
+              "question": "What is logging in the context of DevOps?",
+              "options": [
+                "The process of recording events and messages from applications",
+                "Storing application data",
+                "Monitoring the performance of applications"
+              ],
+              "answer": "The process of recording events and messages from applications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Web Security Fundamentals",
+      "subtopics": [
+        {
+          "name": "Common Security Vulnerabilities (OWASP Top 10)",
+          "points": 5,
+          "explanation": "The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.",
+          "quiz": [
+            {
+              "question": "What is the OWASP Top 10?",
+              "options": [
+                "A list of the most critical security risks for web applications",
+                "A set of guidelines for application performance",
+                "A framework for building secure applications"
+              ],
+              "answer": "A list of the most critical security risks for web applications"
+            },
+            {
+              "question": "Which of the following is a common security vulnerability in the OWASP Top 10?",
+              "options": ["SQL Injection", "Memory Leak", "Race Condition"],
+              "answer": "SQL Injection"
+            },
+            {
+              "question": "What is the main purpose of the OWASP Top 10?",
+              "options": [
+                "To raise awareness about security risks in web applications",
+                "To improve the speed of web applications",
+                "To provide tools for data encryption"
+              ],
+              "answer": "To raise awareness about security risks in web applications"
+            }
+          ]
+        },
+        {
+          "name": "Cross-Site Scripting (XSS)",
+          "points": 6,
+          "explanation": "Cross-Site Scripting (XSS) is a security vulnerability that allows an attacker to inject malicious scripts into content that is then executed by a user's browser.",
+          "quiz": [
+            {
+              "question": "What is Cross-Site Scripting (XSS)?",
+              "options": [
+                "A vulnerability that allows attackers to inject malicious scripts into web pages",
+                "A technique for improving the speed of web pages",
+                "A method of encrypting web content"
+              ],
+              "answer": "A vulnerability that allows attackers to inject malicious scripts into web pages"
+            },
+            {
+              "question": "Which type of attack is Cross-Site Scripting (XSS)?",
+              "options": ["Client-side", "Server-side", "Database"],
+              "answer": "Client-side"
+            },
+            {
+              "question": "What can be done to prevent XSS attacks?",
+              "options": [
+                "Sanitizing user input",
+                "Using weak passwords",
+                "Disabling HTTPS"
+              ],
+              "answer": "Sanitizing user input"
+            }
+          ]
+        },
+        {
+          "name": "SQL Injection",
+          "points": 7,
+          "explanation": "SQL Injection is a web security vulnerability that allows an attacker to interfere with the queries that an application makes to its database, potentially leading to unauthorized access.",
+          "quiz": [
+            {
+              "question": "What is SQL Injection?",
+              "options": [
+                "A vulnerability that allows attackers to execute arbitrary SQL code",
+                "A technique for speeding up database queries",
+                "A method for encrypting database transactions"
+              ],
+              "answer": "A vulnerability that allows attackers to execute arbitrary SQL code"
+            },
+            {
+              "question": "Which technique can prevent SQL Injection attacks?",
+              "options": [
+                "Using parameterized queries",
+                "Using inline SQL",
+                "Storing passwords in plain text"
+              ],
+              "answer": "Using parameterized queries"
+            },
+            {
+              "question": "What is the main risk of an SQL Injection attack?",
+              "options": [
+                "Unauthorized access to the database",
+                "Decreased application performance",
+                "Increased network traffic"
+              ],
+              "answer": "Unauthorized access to the database"
+            }
+          ]
+        },
+        {
+          "name": "Cross-Site Request Forgery (CSRF)",
+          "points": 8,
+          "explanation": "Cross-Site Request Forgery (CSRF) is a security vulnerability that tricks the user into performing actions on behalf of the attacker, without the user's knowledge or consent.",
+          "quiz": [
+            {
+              "question": "What is Cross-Site Request Forgery (CSRF)?",
+              "options": [
+                "A vulnerability that tricks users into performing actions without their knowledge",
+                "A method of encrypting web traffic",
+                "A technique for improving database performance"
+              ],
+              "answer": "A vulnerability that tricks users into performing actions without their knowledge"
+            },
+            {
+              "question": "Which token can be used to prevent CSRF attacks?",
+              "options": ["CSRF token", "Access token", "Refresh token"],
+              "answer": "CSRF token"
+            },
+            {
+              "question": "What is the main defense against CSRF attacks?",
+              "options": [
+                "Using anti-CSRF tokens",
+                "Disabling cookies",
+                "Enabling HTTP"
+              ],
+              "answer": "Using anti-CSRF tokens"
+            }
+          ]
+        },
+        {
+          "name": "Secure Coding Practices",
+          "points": 9,
+          "explanation": "Secure coding practices involve writing code in a way that minimizes security vulnerabilities, ensuring the application is safe from attacks and unauthorized access.",
+          "quiz": [
+            {
+              "question": "What is the goal of secure coding practices?",
+              "options": [
+                "To minimize security vulnerabilities in code",
+                "To improve code readability",
+                "To optimize code performance"
+              ],
+              "answer": "To minimize security vulnerabilities in code"
+            },
+            {
+              "question": "Which of the following is a secure coding practice?",
+              "options": [
+                "Validating user input",
+                "Hardcoding passwords",
+                "Using global variables"
+              ],
+              "answer": "Validating user input"
+            },
+            {
+              "question": "Which technique helps prevent buffer overflow vulnerabilities?",
+              "options": [
+                "Using safe functions for handling input",
+                "Using inline SQL",
+                "Storing sensitive data in cookies"
+              ],
+              "answer": "Using safe functions for handling input"
+            }
+          ]
+        },
+        {
+          "name": "Data Encryption",
+          "points": 8,
+          "explanation": "Data encryption is the process of converting data into a code to prevent unauthorized access, ensuring that sensitive information is protected during storage and transmission.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of data encryption?",
+              "options": [
+                "To protect data from unauthorized access",
+                "To speed up data processing",
+                "To optimize storage space"
+              ],
+              "answer": "To protect data from unauthorized access"
+            },
+            {
+              "question": "Which algorithm is commonly used for data encryption?",
+              "options": ["AES", "MD5", "SHA-1"],
+              "answer": "AES"
+            },
+            {
+              "question": "What is a key in encryption?",
+              "options": [
+                "A secret value used to encrypt and decrypt data",
+                "A field in a database",
+                "A function in a program"
+              ],
+              "answer": "A secret value used to encrypt and decrypt data"
+            }
+          ]
+        },
+        {
+          "name": "HTTPS and SSL/TLS",
+          "points": 10,
+          "explanation": "HTTPS is a secure version of HTTP that uses SSL/TLS to encrypt data between the client and server, protecting it from being intercepted or tampered with.",
+          "quiz": [
+            {
+              "question": "What does HTTPS stand for?",
+              "options": [
+                "Hypertext Transfer Protocol Secure",
+                "Hyperlink Transfer Protocol Secure",
+                "Hypertext Transmission Protocol Secure"
+              ],
+              "answer": "Hypertext Transfer Protocol Secure"
+            },
+            {
+              "question": "Which protocol is used by HTTPS to secure data?",
+              "options": ["SSL/TLS", "FTP", "SMTP"],
+              "answer": "SSL/TLS"
+            },
+            {
+              "question": "What is the primary benefit of using HTTPS?",
+              "options": [
+                "Encryption of data in transit",
+                "Faster loading of web pages",
+                "Reduced server load"
+              ],
+              "answer": "Encryption of data in transit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing and Debugging for Back-End",
+      "subtopics": [
+        {
+          "name": "Unit Testing with Mocha/Chai",
+          "points": 4,
+          "explanation": "Unit testing involves testing individual components or functions of your code in isolation. Mocha and Chai are popular testing frameworks for Node.js applications.",
+          "quiz": [
+            {
+              "question": "What is unit testing?",
+              "options": [
+                "Testing individual components or functions of code",
+                "Testing the entire application",
+                "Testing the user interface"
+              ],
+              "answer": "Testing individual components or functions of code"
+            },
+            {
+              "question": "Which framework is commonly used for unit testing in Node.js?",
+              "options": ["Mocha", "Express", "Jenkins"],
+              "answer": "Mocha"
+            },
+            {
+              "question": "What is an assertion in unit testing?",
+              "options": [
+                "A statement that verifies a condition is true",
+                "A function that performs the test",
+                "A report generated after testing"
+              ],
+              "answer": "A statement that verifies a condition is true"
+            }
+          ]
+        },
+        {
+          "name": "Integration Testing with Supertest",
+          "points": 5,
+          "explanation": "Integration testing focuses on verifying the interactions between different components of an application. Supertest is a popular library for testing HTTP endpoints in Node.js applications.",
+          "quiz": [
+            {
+              "question": "What is integration testing?",
+              "options": [
+                "Testing interactions between different components of an application",
+                "Testing the user interface of an application",
+                "Testing the performance of an application"
+              ],
+              "answer": "Testing interactions between different components of an application"
+            },
+            {
+              "question": "Which library is commonly used for integration testing in Node.js?",
+              "options": ["Supertest", "Mocha", "Express"],
+              "answer": "Supertest"
+            },
+            {
+              "question": "What is the goal of integration testing?",
+              "options": [
+                "To verify that components work together as expected",
+                "To improve code readability",
+                "To optimize application performance"
+              ],
+              "answer": "To verify that components work together as expected"
+            }
+          ]
+        },
+        {
+          "name": "End-to-End Testing with Postman",
+          "points": 6,
+          "explanation": "End-to-end (E2E) testing involves testing the complete flow of an application, from start to finish, to ensure that all components are working together correctly. Postman is a popular tool for testing APIs in this manner.",
+          "quiz": [
+            {
+              "question": "What is end-to-end (E2E) testing?",
+              "options": [
+                "Testing the complete flow of an application from start to finish",
+                "Testing individual components of an application",
+                "Testing the database schema"
+              ],
+              "answer": "Testing the complete flow of an application from start to finish"
+            },
+            {
+              "question": "Which tool is commonly used for end-to-end testing of APIs?",
+              "options": ["Postman", "Mocha", "Supertest"],
+              "answer": "Postman"
+            },
+            {
+              "question": "What is the primary benefit of end-to-end testing?",
+              "options": [
+                "Ensuring that all components work together correctly",
+                "Improving code readability",
+                "Optimizing application performance"
+              ],
+              "answer": "Ensuring that all components work together correctly"
+            }
+          ]
+        },
+        {
+          "name": "Debugging in Node.js",
+          "points": 3,
+          "explanation": "Debugging is the process of identifying and fixing issues in your code. Node.js provides built-in tools and external libraries for effective debugging.",
+          "quiz": [
+            {
+              "question": "What is debugging?",
+              "options": [
+                "Identifying and fixing issues in code",
+                "Writing test cases",
+                "Deploying applications to production"
+              ],
+              "answer": "Identifying and fixing issues in code"
+            },
+            {
+              "question": "Which built-in tool can be used for debugging in Node.js?",
+              "options": ["node inspect", "npm test", "docker run"],
+              "answer": "node inspect"
+            },
+            {
+              "question": "Which keyword can be used in code to set a breakpoint in Node.js?",
+              "options": ["debugger", "break", "inspect"],
+              "answer": "debugger"
+            }
+          ]
+        },
+        {
+          "name": "Test-Driven Development (TDD)",
+          "points": 7,
+          "explanation": "Test-Driven Development (TDD) is a software development approach where tests are written before writing the code that makes the test pass. This approach ensures that code is thoroughly tested and meets the requirements.",
+          "quiz": [
+            {
+              "question": "What is Test-Driven Development (TDD)?",
+              "options": [
+                "A development approach where tests are written before the code",
+                "A method of deploying applications",
+                "A way to refactor existing code"
+              ],
+              "answer": "A development approach where tests are written before the code"
+            },
+            {
+              "question": "What is the first step in TDD?",
+              "options": [
+                "Writing a failing test",
+                "Writing the code",
+                "Refactoring code"
+              ],
+              "answer": "Writing a failing test"
+            },
+            {
+              "question": "What is the main benefit of TDD?",
+              "options": [
+                "Ensuring that code meets the requirements",
+                "Improving application performance",
+                "Reducing the size of the codebase"
+              ],
+              "answer": "Ensuring that code meets the requirements"
+            }
+          ]
+        },
+        {
+          "name": "Performance Testing",
+          "points": 8,
+          "explanation": "Performance testing involves evaluating the speed, responsiveness, and stability of an application under different conditions. It ensures that the application performs well under expected workloads.",
+          "quiz": [
+            {
+              "question": "What is the main goal of performance testing?",
+              "options": [
+                "To evaluate the speed and responsiveness of an application",
+                "To ensure the code is bug-free",
+                "To verify that the user interface is working correctly"
+              ],
+              "answer": "To evaluate the speed and responsiveness of an application"
+            },
+            {
+              "question": "Which tool is commonly used for performance testing?",
+              "options": ["JMeter", "Mocha", "Supertest"],
+              "answer": "JMeter"
+            },
+            {
+              "question": "What is a load test?",
+              "options": [
+                "A test that evaluates the performance of an application under heavy load",
+                "A test that checks for security vulnerabilities",
+                "A test that verifies the accuracy of data"
+              ],
+              "answer": "A test that evaluates the performance of an application under heavy load"
+            }
+          ]
+        },
+        {
+          "name": "Load Testing with Artillery",
+          "points": 9,
+          "explanation": "Load testing with Artillery involves simulating a large number of users to test how an application performs under high demand, identifying potential bottlenecks and performance issues.",
+          "quiz": [
+            {
+              "question": "What is load testing?",
+              "options": [
+                "Simulating a large number of users to test application performance",
+                "Testing the security of an application",
+                "Verifying the correctness of database queries"
+              ],
+              "answer": "Simulating a large number of users to test application performance"
+            },
+            {
+              "question": "Which tool is used for load testing in Node.js?",
+              "options": ["Artillery", "Mocha", "Supertest"],
+              "answer": "Artillery"
+            },
+            {
+              "question": "What is the main purpose of load testing?",
+              "options": [
+                "To identify potential bottlenecks and performance issues",
+                "To ensure the code is bug-free",
+                "To improve application readability"
+              ],
+              "answer": "To identify potential bottlenecks and performance issues"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scoreThresholds": {
+    "green": 219,
+    "yellow": 74,
+    "red": 0
+  }
+}

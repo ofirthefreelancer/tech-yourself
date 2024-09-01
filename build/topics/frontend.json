@@ -1,0 +1,1440 @@
+{
+  "projectName": "Front-End Yourself",
+  "refreshThreshold": 3,
+  "topics": [
+    {
+      "title": "HTML and CSS Fundamentals",
+      "subtopics": [
+        {
+          "name": "HTML Basics",
+          "points": 1,
+          "explanation": "HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the structure of a webpage, allowing you to define elements such as headings, paragraphs, links, images, and more. HTML uses tags to define the structure, and it is the foundation of web development.",
+          "quiz": [
+            {
+              "question": "What does HTML stand for?",
+              "options": [
+                "Hyper Text Markup Language",
+                "Home Tool Markup Language",
+                "Hyperlinks and Text Markup Language"
+              ],
+              "answer": "Hyper Text Markup Language"
+            },
+            {
+              "question": "Which tag is used for the largest heading?",
+              "options": ["<h1>", "<h6>", "<heading>"],
+              "answer": "<h1>"
+            },
+            {
+              "question": "Which tag is used to create a hyperlink?",
+              "options": ["<a>", "<link>", "<href>"],
+              "answer": "<a>"
+            }
+          ]
+        },
+        {
+          "name": "CSS Basics",
+          "points": 2,
+          "explanation": "CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the visual presentation of web content, such as colors, fonts, spacing, and positioning. CSS allows developers to separate content from design, making it easier to maintain and update.",
+          "quiz": [
+            {
+              "question": "What does CSS stand for?",
+              "options": [
+                "Cascading Style Sheets",
+                "Computer Style Sheets",
+                "Creative Style Sheets"
+              ],
+              "answer": "Cascading Style Sheets"
+            },
+            {
+              "question": "Which property is used to change the background color?",
+              "options": ["background-color", "color", "bgcolor"],
+              "answer": "background-color"
+            },
+            {
+              "question": "How do you center a block element horizontally?",
+              "options": [
+                "margin: auto;",
+                "text-align: center;",
+                "display: block;"
+              ],
+              "answer": "margin: auto;"
+            }
+          ]
+        },
+        {
+          "name": "Semantic HTML",
+          "points": 3,
+          "explanation": "Semantic HTML involves using HTML tags that convey the meaning of the content they contain. For example, <header> is used for page headers, and <article> is used for independent content. Semantic tags improve accessibility and search engine optimization (SEO) by providing more context to both users and search engines.",
+          "quiz": [
+            {
+              "question": "Which tag is semantic?",
+              "options": ["<article>", "<div>", "<span>"],
+              "answer": "<article>"
+            },
+            {
+              "question": "Which tag is used for navigation links?",
+              "options": ["<nav>", "<menu>", "<footer>"],
+              "answer": "<nav>"
+            },
+            {
+              "question": "Which tag should be used for the main content of a document?",
+              "options": ["<main>", "<section>", "<aside>"],
+              "answer": "<main>"
+            }
+          ]
+        },
+        {
+          "name": "CSS Flexbox",
+          "points": 5,
+          "explanation": "CSS Flexbox is a layout module that allows you to design complex layouts easily. It provides a way to align and distribute space among items in a container, even when their size is unknown. Flexbox is particularly useful for responsive designs, as it enables flexible and efficient item arrangement.",
+          "quiz": [
+            {
+              "question": "Which property defines the alignment along the main axis?",
+              "options": ["justify-content", "align-items", "flex-direction"],
+              "answer": "justify-content"
+            },
+            {
+              "question": "Which property changes the direction of the flex items?",
+              "options": ["flex-direction", "order", "flex-wrap"],
+              "answer": "flex-direction"
+            },
+            {
+              "question": "What is the default value of flex-direction?",
+              "options": ["row", "column", "wrap"],
+              "answer": "row"
+            }
+          ]
+        },
+        {
+          "name": "CSS Grid",
+          "points": 6,
+          "explanation": "CSS Grid Layout is a powerful layout system that allows you to create complex web layouts. It provides a two-dimensional grid-based layout system that enables you to place elements precisely where you want them in a grid structure. This system is ideal for creating responsive designs that adapt to different screen sizes.",
+          "quiz": [
+            {
+              "question": "Which property is used to define the rows in a grid?",
+              "options": [
+                "grid-template-rows",
+                "grid-template-columns",
+                "grid-auto-rows"
+              ],
+              "answer": "grid-template-rows"
+            },
+            {
+              "question": "What is the default value of grid-auto-flow?",
+              "options": ["row", "column", "dense"],
+              "answer": "row"
+            },
+            {
+              "question": "Which property defines the space between grid items?",
+              "options": ["grid-gap", "grid-column-gap", "grid-row-gap"],
+              "answer": "grid-gap"
+            }
+          ]
+        },
+        {
+          "name": "Responsive Images",
+          "points": 7,
+          "explanation": "Responsive images are images that scale and change according to the screen size, ensuring that they look good on all devices. This can be achieved using the srcset attribute, which allows different images to be served based on the device's screen size and resolution.",
+          "quiz": [
+            {
+              "question": "Which attribute is used to define responsive images?",
+              "options": ["srcset", "media", "sizes"],
+              "answer": "srcset"
+            },
+            {
+              "question": "What is the purpose of the sizes attribute?",
+              "options": [
+                "To specify the size of images depending on viewport size",
+                "To define alternative images for different devices",
+                "To control the quality of the image"
+              ],
+              "answer": "To specify the size of images depending on viewport size"
+            },
+            {
+              "question": "Which element is used for providing multiple image sources for different devices?",
+              "options": ["<picture>", "<img>", "<source>"],
+              "answer": "<picture>"
+            }
+          ]
+        },
+        {
+          "name": "CSS Animations",
+          "points": 8,
+          "explanation": "CSS animations allow you to animate transitions between different states of an element. They are used to create smooth transitions, such as fading in elements, moving them across the screen, or changing their size or color. CSS animations are widely used to enhance user experience and make web applications more interactive.",
+          "quiz": [
+            {
+              "question": "Which property is used to define an animation?",
+              "options": ["@keyframes", "animation", "transform"],
+              "answer": "@keyframes"
+            },
+            {
+              "question": "Which property controls the speed of the animation?",
+              "options": [
+                "animation-duration",
+                "animation-timing-function",
+                "animation-delay"
+              ],
+              "answer": "animation-duration"
+            },
+            {
+              "question": "How do you make an animation repeat forever?",
+              "options": [
+                "animation-iteration-count: infinite;",
+                "animation-direction: alternate;",
+                "animation-play-state: running;"
+              ],
+              "answer": "animation-iteration-count: infinite;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JavaScript Fundamentals",
+      "subtopics": [
+        {
+          "name": "JavaScript Basics",
+          "points": 2,
+          "explanation": "JavaScript is a programming language that allows you to implement complex features on web pages. It is used to create dynamically updating content, control multimedia, animate images, and much more. JavaScript is an essential language for front-end development, allowing developers to make websites interactive.",
+          "quiz": [
+            {
+              "question": "What is the correct syntax for referring to an external script called 'script.js'?",
+              "options": [
+                "<script src='script.js'>",
+                "<script href='script.js'>",
+                "<script ref='script.js'>"
+              ],
+              "answer": "<script src='script.js'>"
+            },
+            {
+              "question": "Which company developed JavaScript?",
+              "options": ["Netscape", "Microsoft", "Google"],
+              "answer": "Netscape"
+            },
+            {
+              "question": "Which of the following is a JavaScript data type?",
+              "options": ["String", "Integer", "Boolean"],
+              "answer": "String"
+            }
+          ]
+        },
+        {
+          "name": "DOM Manipulation",
+          "points": 3,
+          "explanation": "The DOM (Document Object Model) represents the structure of a webpage as a tree of objects. JavaScript can be used to manipulate the DOM, allowing you to dynamically change the content, structure, and style of a webpage. This enables interactive user experiences, such as updating content in response to user actions.",
+          "quiz": [
+            {
+              "question": "What does DOM stand for?",
+              "options": [
+                "Document Object Model",
+                "Data Object Model",
+                "Document Object Module"
+              ],
+              "answer": "Document Object Model"
+            },
+            {
+              "question": "Which method is used to access an element by its ID?",
+              "options": [
+                "getElementById()",
+                "querySelector()",
+                "getElementsByClassName()"
+              ],
+              "answer": "getElementById()"
+            },
+            {
+              "question": "How can you create a new element in the DOM?",
+              "options": [
+                "document.createElement()",
+                "document.appendChild()",
+                "document.newElement()"
+              ],
+              "answer": "document.createElement()"
+            }
+          ]
+        },
+        {
+          "name": "ES6+ Features",
+          "points": 5,
+          "explanation": "ES6 (ECMAScript 2015) introduced a number of new features to JavaScript, such as arrow functions, classes, template literals, and destructuring. These features make JavaScript code more concise and easier to understand, improving the overall development experience.",
+          "quiz": [
+            {
+              "question": "Which keyword is used to declare a constant in JavaScript?",
+              "options": ["const", "let", "var"],
+              "answer": "const"
+            },
+            {
+              "question": "What is the correct syntax for a template literal?",
+              "options": [
+                "`Hello, ${name}!`",
+                "'Hello, ' + name + '!'",
+                "\"Hello, \" + name + \"!\""
+              ],
+              "answer": "`Hello, ${name}!`"
+            },
+            {
+              "question": "Which of the following is an arrow function?",
+              "options": [
+                "(a, b) => a + b",
+                "function(a, b) { return a + b; }",
+                "let sum = function(a, b) { return a + b; };"
+              ],
+              "answer": "(a, b) => a + b"
+            }
+          ]
+        },
+        {
+          "name": "JavaScript Promises",
+          "points": 6,
+          "explanation": "JavaScript Promises represent the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises simplify handling asynchronous operations, making the code more readable and easier to manage, especially when dealing with multiple asynchronous actions.",
+          "quiz": [
+            {
+              "question": "What does a Promise represent?",
+              "options": [
+                "A value that will be resolved in the future",
+                "An object that holds multiple values",
+                "A function that returns a value"
+              ],
+              "answer": "A value that will be resolved in the future"
+            },
+            {
+              "question": "Which method is used to handle the resolution of a Promise?",
+              "options": [".then()", ".catch()", ".finally()"],
+              "answer": ".then()"
+            },
+            {
+              "question": "Which method is used to handle errors in a Promise?",
+              "options": [".catch()", ".finally()", ".error()"],
+              "answer": ".catch()"
+            }
+          ]
+        },
+        {
+          "name": "Event Handling",
+          "points": 4,
+          "explanation": "Event handling in JavaScript allows you to respond to user interactions, such as clicks, key presses, or mouse movements. By attaching event listeners to elements, you can execute specific functions when certain actions occur, creating dynamic and interactive user experiences.",
+          "quiz": [
+            {
+              "question": "Which method is used to attach an event handler to an element?",
+              "options": ["addEventListener()", "attachEvent()", "onEvent()"],
+              "answer": "addEventListener()"
+            },
+            {
+              "question": "What does the 'event' parameter in an event handler function represent?",
+              "options": [
+                "The event object",
+                "The element that triggered the event",
+                "The function to be executed"
+              ],
+              "answer": "The event object"
+            },
+            {
+              "question": "Which event is triggered when a user clicks on an element?",
+              "options": ["click", "mouseover", "keydown"],
+              "answer": "click"
+            }
+          ]
+        },
+        {
+          "name": "Asynchronous JavaScript",
+          "points": 7,
+          "explanation": "Asynchronous JavaScript allows you to perform tasks in the background without blocking the main thread. This is crucial for tasks such as fetching data from a server or handling user interactions while other operations are still ongoing. Techniques such as callbacks, Promises, and async/await are commonly used for asynchronous programming in JavaScript.",
+          "quiz": [
+            {
+              "question": "What is the main benefit of asynchronous programming?",
+              "options": [
+                "It allows non-blocking operations",
+                "It speeds up code execution",
+                "It simplifies code"
+              ],
+              "answer": "It allows non-blocking operations"
+            },
+            {
+              "question": "Which of the following is used to handle asynchronous operations?",
+              "options": [
+                "Callbacks, Promises, async/await",
+                "Loops and Conditionals",
+                "Events and Listeners"
+              ],
+              "answer": "Callbacks, Promises, async/await"
+            },
+            {
+              "question": "What keyword is used to define an asynchronous function?",
+              "options": ["async", "await", "promise"],
+              "answer": "async"
+            }
+          ]
+        },
+        {
+          "name": "Fetch API/AJAX",
+          "points": 8,
+          "explanation": "The Fetch API provides a modern, promise-based way to make asynchronous HTTP requests. It replaces the older XMLHttpRequest (XHR) and allows you to fetch resources, such as JSON data, from the server. AJAX (Asynchronous JavaScript and XML) is a technique used to update parts of a web page without reloading the whole page, often utilizing the Fetch API.",
+          "quiz": [
+            {
+              "question": "Which method is used to fetch data using the Fetch API?",
+              "options": ["fetch()", "get()", "retrieve()"],
+              "answer": "fetch()"
+            },
+            {
+              "question": "What does AJAX stand for?",
+              "options": [
+                "Asynchronous JavaScript and XML",
+                "Advanced JavaScript and XML",
+                "Asynchronous JSON and XML"
+              ],
+              "answer": "Asynchronous JavaScript and XML"
+            },
+            {
+              "question": "How do you handle the response of a fetch request?",
+              "options": [
+                "Using .then() method",
+                "Using .fetch() method",
+                "Using .get() method"
+              ],
+              "answer": "Using .then() method"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Responsive Web Design and Accessibility",
+      "subtopics": [
+        {
+          "name": "Media Queries",
+          "points": 3,
+          "explanation": "Media queries are a fundamental part of responsive web design. They allow you to apply different styles depending on the characteristics of the user's device, such as screen size or resolution. This ensures that your website looks good on all devices, from phones to desktops.",
+          "quiz": [
+            {
+              "question": "What is the primary purpose of media queries?",
+              "options": [
+                "To apply styles based on device characteristics",
+                "To load external stylesheets",
+                "To create animations"
+              ],
+              "answer": "To apply styles based on device characteristics"
+            },
+            {
+              "question": "Which CSS rule is used to apply a style only if the screen width is less than 600px?",
+              "options": [
+                "@media (max-width: 600px)",
+                "@media (min-width: 600px)",
+                "@media (width: 600px)"
+              ],
+              "answer": "@media (max-width: 600px)"
+            },
+            {
+              "question": "What are media queries typically used for?",
+              "options": ["Responsive design", "Typography", "Color schemes"],
+              "answer": "Responsive design"
+            }
+          ]
+        },
+        {
+          "name": "Mobile-First Design",
+          "points": 4,
+          "explanation": "Mobile-first design is an approach where web design starts with the smallest screen sizes first. This approach ensures that the core content and functionality are accessible on mobile devices before scaling up to larger screens. Mobile-first design often involves writing media queries that enhance the design for larger screens.",
+          "quiz": [
+            {
+              "question": "What is the main focus of mobile-first design?",
+              "options": [
+                "Designing for mobile devices first",
+                "Designing for desktops first",
+                "Designing for tablets first"
+              ],
+              "answer": "Designing for mobile devices first"
+            },
+            {
+              "question": "Why is mobile-first design important?",
+              "options": [
+                "It ensures core content is accessible on all devices",
+                "It makes websites look better on large screens",
+                "It reduces the need for CSS"
+              ],
+              "answer": "It ensures core content is accessible on all devices"
+            },
+            {
+              "question": "Which CSS approach is often used in mobile-first design?",
+              "options": [
+                "Starting with min-width media queries",
+                "Starting with max-width media queries",
+                "Starting with screen-size queries"
+              ],
+              "answer": "Starting with min-width media queries"
+            }
+          ]
+        },
+        {
+          "name": "Flexbox and Grid Layouts",
+          "points": 5,
+          "explanation": "Flexbox and Grid are powerful layout modules in CSS that provide flexible and efficient ways to create complex layouts. Flexbox is one-dimensional, controlling the layout in one direction (either row or column), while Grid is two-dimensional, allowing for control over both rows and columns simultaneously.",
+          "quiz": [
+            {
+              "question": "What is the main difference between Flexbox and Grid?",
+              "options": [
+                "Flexbox is one-dimensional, Grid is two-dimensional",
+                "Flexbox is for rows, Grid is for columns",
+                "Flexbox is for small layouts, Grid is for large layouts"
+              ],
+              "answer": "Flexbox is one-dimensional, Grid is two-dimensional"
+            },
+            {
+              "question": "Which property is used to create a grid layout?",
+              "options": [
+                "display: grid;",
+                "display: flex;",
+                "display: block;"
+              ],
+              "answer": "display: grid;"
+            },
+            {
+              "question": "Which property is used to align items along the cross axis in Flexbox?",
+              "options": ["align-items", "justify-content", "align-content"],
+              "answer": "align-items"
+            }
+          ]
+        },
+        {
+          "name": "ARIA Roles",
+          "points": 6,
+          "explanation": "ARIA (Accessible Rich Internet Applications) roles are attributes added to HTML elements to enhance accessibility for users with disabilities. These roles provide additional information to assistive technologies, such as screen readers, helping users understand and navigate the content more effectively.",
+          "quiz": [
+            {
+              "question": "What is the purpose of ARIA roles?",
+              "options": [
+                "To improve accessibility",
+                "To improve SEO",
+                "To enhance animations"
+              ],
+              "answer": "To improve accessibility"
+            },
+            {
+              "question": "Which ARIA role is used for a navigation menu?",
+              "options": ["role='navigation'", "role='menu'", "role='link'"],
+              "answer": "role='navigation'"
+            },
+            {
+              "question": "Which ARIA attribute is used to describe the current state of an element?",
+              "options": ["aria-current", "aria-label", "aria-labelledby"],
+              "answer": "aria-current"
+            }
+          ]
+        },
+        {
+          "name": "Keyboard Navigation",
+          "points": 7,
+          "explanation": "Keyboard navigation refers to the ability to navigate a website using only the keyboard, which is crucial for users who cannot use a mouse. Ensuring that all interactive elements can be accessed and used via the keyboard improves the accessibility of a website.",
+          "quiz": [
+            {
+              "question": "Why is keyboard navigation important?",
+              "options": [
+                "It enhances accessibility",
+                "It improves SEO",
+                "It reduces the need for CSS"
+              ],
+              "answer": "It enhances accessibility"
+            },
+            {
+              "question": "Which key is commonly used to navigate through interactive elements?",
+              "options": ["Tab", "Enter", "Spacebar"],
+              "answer": "Tab"
+            },
+            {
+              "question": "How can you make an element focusable using the keyboard?",
+              "options": [
+                "Add a tabindex attribute",
+                "Add an aria-label",
+                "Add a role attribute"
+              ],
+              "answer": "Add a tabindex attribute"
+            }
+          ]
+        },
+        {
+          "name": "Color Contrast",
+          "points": 8,
+          "explanation": "Color contrast refers to the difference in light between the foreground and background colors on a web page. Ensuring sufficient color contrast is crucial for readability, especially for users with visual impairments. This is an important aspect of web accessibility and is often a requirement in accessibility guidelines.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of ensuring good color contrast?",
+              "options": [
+                "To improve readability",
+                "To enhance animations",
+                "To improve SEO"
+              ],
+              "answer": "To improve readability"
+            },
+            {
+              "question": "Which tool can be used to check color contrast?",
+              "options": [
+                "Color contrast checker",
+                "SEO analyzer",
+                "CSS validator"
+              ],
+              "answer": "Color contrast checker"
+            },
+            {
+              "question": "What is the recommended minimum contrast ratio for text and background?",
+              "options": ["4.5:1", "3:1", "7:1"],
+              "answer": "4.5:1"
+            }
+          ]
+        },
+        {
+          "name": "Accessible Forms",
+          "points": 9,
+          "explanation": "Accessible forms are designed to be easily used by all users, including those with disabilities. This involves proper labeling of form elements, providing clear instructions, and ensuring that assistive technologies can interact with the form. Accessible forms are crucial for inclusive web design.",
+          "quiz": [
+            {
+              "question": "Why is it important to label form elements?",
+              "options": ["For accessibility", "For SEO", "For animations"],
+              "answer": "For accessibility"
+            },
+            {
+              "question": "Which attribute is used to associate a label with a form element?",
+              "options": ["for", "id", "name"],
+              "answer": "for"
+            },
+            {
+              "question": "How can you ensure that error messages are accessible?",
+              "options": [
+                "Associate them with the relevant input using aria-describedby",
+                "Use bright colors",
+                "Place them at the top of the form"
+              ],
+              "answer": "Associate them with the relevant input using aria-describedby"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Front-End Frameworks: React, Angular, and Vue",
+      "subtopics": [
+        {
+          "name": "React Basics",
+          "points": 3,
+          "explanation": "React is a popular JavaScript library for building user interfaces, particularly single-page applications. It allows developers to create reusable components, manage the application state, and efficiently update the UI in response to changes. React's component-based architecture makes it easier to build and maintain complex user interfaces.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of React?",
+              "options": [
+                "Building user interfaces",
+                "Server-side rendering",
+                "Database management"
+              ],
+              "answer": "Building user interfaces"
+            },
+            {
+              "question": "Which method is used to render a React component?",
+              "options": [
+                "ReactDOM.render()",
+                "React.render()",
+                "Component.render()"
+              ],
+              "answer": "ReactDOM.render()"
+            },
+            {
+              "question": "What is a React component?",
+              "options": [
+                "A reusable piece of UI",
+                "A CSS module",
+                "A JavaScript library"
+              ],
+              "answer": "A reusable piece of UI"
+            }
+          ]
+        },
+        {
+          "name": "React Hooks",
+          "points": 5,
+          "explanation": "React Hooks are functions that let you use state and other React features in functional components. Introduced in React 16.8, hooks like useState and useEffect allow you to manage component state, handle side effects, and more without writing class components.",
+          "quiz": [
+            {
+              "question": "Which hook is used to manage state in a functional component?",
+              "options": ["useState", "useEffect", "useContext"],
+              "answer": "useState"
+            },
+            {
+              "question": "Which hook is used to handle side effects in React?",
+              "options": ["useEffect", "useState", "useRef"],
+              "answer": "useEffect"
+            },
+            {
+              "question": "Can you use multiple hooks in a single component?",
+              "options": ["Yes", "No", "Only in class components"],
+              "answer": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Component Lifecycle",
+          "points": 6,
+          "explanation": "The component lifecycle in React refers to the series of methods and processes that occur during the life of a component, from its creation to its removal. Understanding the lifecycle helps developers optimize performance, manage resources, and handle side effects effectively.",
+          "quiz": [
+            {
+              "question": "What is the first method called when a React component is created?",
+              "options": ["constructor()", "componentDidMount()", "render()"],
+              "answer": "constructor()"
+            },
+            {
+              "question": "Which method is called when a component is removed from the DOM?",
+              "options": [
+                "componentWillUnmount()",
+                "componentDidUnmount()",
+                "render()"
+              ],
+              "answer": "componentWillUnmount()"
+            },
+            {
+              "question": "Which method is used to update the UI in response to state or prop changes?",
+              "options": [
+                "render()",
+                "shouldComponentUpdate()",
+                "componentDidUpdate()"
+              ],
+              "answer": "render()"
+            }
+          ]
+        },
+        {
+          "name": "State Management",
+          "points": 7,
+          "explanation": "State management in React involves managing the state of the application and sharing it between components. React provides built-in state management using the useState and useReducer hooks, but for larger applications, external libraries like Redux or MobX are often used to manage complex state interactions.",
+          "quiz": [
+            {
+              "question": "Which hook is used for state management in React?",
+              "options": ["useState", "useEffect", "useContext"],
+              "answer": "useState"
+            },
+            {
+              "question": "Which library is commonly used for state management in large React applications?",
+              "options": ["Redux", "React Router", "Jest"],
+              "answer": "Redux"
+            },
+            {
+              "question": "What is the main benefit of using Redux for state management?",
+              "options": [
+                "Centralized state management",
+                "Improved routing",
+                "Enhanced animations"
+              ],
+              "answer": "Centralized state management"
+            }
+          ]
+        },
+        {
+          "name": "Angular Basics",
+          "points": 4,
+          "explanation": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular provides a rich set of features like data binding, dependency injection, and a modular architecture, making it a powerful tool for building large-scale applications.",
+          "quiz": [
+            {
+              "question": "Which language is primarily used in Angular?",
+              "options": ["TypeScript", "JavaScript", "Python"],
+              "answer": "TypeScript"
+            },
+            {
+              "question": "Which directive is used for two-way data binding in Angular?",
+              "options": ["ngModel", "ngBind", "ngIf"],
+              "answer": "ngModel"
+            },
+            {
+              "question": "What is the purpose of Angular's dependency injection?",
+              "options": [
+                "To manage service instances",
+                "To optimize performance",
+                "To handle routing"
+              ],
+              "answer": "To manage service instances"
+            }
+          ]
+        },
+        {
+          "name": "Vue Basics",
+          "points": 5,
+          "explanation": "Vue.js is a progressive JavaScript framework for building user interfaces. Vue is designed to be incrementally adoptable, meaning you can use as much or as little of Vue as needed. Its core library focuses on the view layer only, making it easy to integrate with other libraries or existing projects.",
+          "quiz": [
+            {
+              "question": "What is the main focus of Vue.js?",
+              "options": [
+                "The view layer",
+                "Server-side rendering",
+                "State management"
+              ],
+              "answer": "The view layer"
+            },
+            {
+              "question": "Which directive is used for binding data to attributes in Vue?",
+              "options": ["v-bind", "v-if", "v-model"],
+              "answer": "v-bind"
+            },
+            {
+              "question": "What is the purpose of Vue components?",
+              "options": [
+                "To encapsulate reusable code",
+                "To manage state",
+                "To handle routing"
+              ],
+              "answer": "To encapsulate reusable code"
+            }
+          ]
+        },
+        {
+          "name": "Routing in SPA",
+          "points": 8,
+          "explanation": "Routing in single-page applications (SPA) involves navigating between different views or components without reloading the entire page. Libraries like React Router, Angular Router, and Vue Router provide the tools needed to manage routing in SPAs, enabling smooth transitions and a seamless user experience.",
+          "quiz": [
+            {
+              "question": "What does SPA stand for?",
+              "options": [
+                "Single Page Application",
+                "Service Provider Application",
+                "Stateful Page Application"
+              ],
+              "answer": "Single Page Application"
+            },
+            {
+              "question": "Which library is used for routing in React?",
+              "options": ["React Router", "Vue Router", "Angular Router"],
+              "answer": "React Router"
+            },
+            {
+              "question": "What is the main benefit of routing in SPAs?",
+              "options": [
+                "Seamless navigation without page reloads",
+                "Improved server performance",
+                "Better SEO"
+              ],
+              "answer": "Seamless navigation without page reloads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "State Management and Architecture",
+      "subtopics": [
+        {
+          "name": "Redux Basics",
+          "points": 4,
+          "explanation": "Redux is a predictable state container for JavaScript apps, commonly used with React. It helps you manage the state of your application in a single place, making it easier to debug and test. Redux operates on a unidirectional data flow, ensuring that changes to the application state are predictable and traceable.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of Redux?",
+              "options": [
+                "To manage application state",
+                "To handle routing",
+                "To improve performance"
+              ],
+              "answer": "To manage application state"
+            },
+            {
+              "question": "Which function is used to create a Redux store?",
+              "options": [
+                "createStore()",
+                "createRedux()",
+                "initializeStore()"
+              ],
+              "answer": "createStore()"
+            },
+            {
+              "question": "What is the purpose of Redux actions?",
+              "options": [
+                "To describe changes to the state",
+                "To handle side effects",
+                "To manage components"
+              ],
+              "answer": "To describe changes to the state"
+            }
+          ]
+        },
+        {
+          "name": "Context API",
+          "points": 5,
+          "explanation": "The Context API is a React feature that allows you to pass data through the component tree without having to pass props down manually at every level. It is useful for sharing global data, such as themes or user authentication, across the application.",
+          "quiz": [
+            {
+              "question": "What does the Context API in React help with?",
+              "options": [
+                "Passing data through the component tree",
+                "Handling side effects",
+                "Improving performance"
+              ],
+              "answer": "Passing data through the component tree"
+            },
+            {
+              "question": "Which method is used to create a new context?",
+              "options": [
+                "React.createContext()",
+                "React.createProvider()",
+                "React.useContext()"
+              ],
+              "answer": "React.createContext()"
+            },
+            {
+              "question": "What is a common use case for the Context API?",
+              "options": [
+                "Managing themes",
+                "Handling routing",
+                "State management"
+              ],
+              "answer": "Managing themes"
+            }
+          ]
+        },
+        {
+          "name": "Using Redux Toolkit",
+          "points": 6,
+          "explanation": "Redux Toolkit is the official, recommended way to write Redux logic. It provides tools and conventions that simplify the process of setting up and working with Redux, such as configuring the store, defining reducers, and creating actions. Redux Toolkit helps to reduce boilerplate and improve code maintainability.",
+          "quiz": [
+            {
+              "question": "What is Redux Toolkit primarily used for?",
+              "options": [
+                "Simplifying Redux setup",
+                "Handling asynchronous operations",
+                "Improving performance"
+              ],
+              "answer": "Simplifying Redux setup"
+            },
+            {
+              "question": "Which function is used to configure the Redux store with Redux Toolkit?",
+              "options": ["configureStore()", "createStore()", "setupStore()"],
+              "answer": "configureStore()"
+            },
+            {
+              "question": "Which Redux Toolkit function helps to create a slice of state?",
+              "options": ["createSlice()", "createReducer()", "createAction()"],
+              "answer": "createSlice()"
+            }
+          ]
+        },
+        {
+          "name": "MobX Basics",
+          "points": 7,
+          "explanation": "MobX is a simple, scalable state management solution for JavaScript applications. It is designed to be minimalistic and provides a reactive programming model, allowing you to automatically track and update state changes across your application. MobX emphasizes simplicity and makes it easy to manage complex state interactions.",
+          "quiz": [
+            {
+              "question": "What is the main advantage of using MobX?",
+              "options": [
+                "Automatic state tracking and updates",
+                "Improved performance",
+                "Better routing management"
+              ],
+              "answer": "Automatic state tracking and updates"
+            },
+            {
+              "question": "What is the purpose of the observable() function in MobX?",
+              "options": [
+                "To make a state reactive",
+                "To manage components",
+                "To handle side effects"
+              ],
+              "answer": "To make a state reactive"
+            },
+            {
+              "question": "Which decorator is commonly used with MobX to observe state changes?",
+              "options": ["@observer", "@observable", "@computed"],
+              "answer": "@observer"
+            }
+          ]
+        },
+        {
+          "name": "React Context vs Redux",
+          "points": 8,
+          "explanation": "React Context and Redux are both used for managing state in React applications, but they serve different purposes. Context is suitable for simple, small-scale state management, such as theming or user authentication, while Redux is more powerful and better suited for large, complex applications where global state needs to be managed across multiple components.",
+          "quiz": [
+            {
+              "question": "What is the primary use case for React Context?",
+              "options": [
+                "Managing small-scale global state",
+                "Handling side effects",
+                "Improving performance"
+              ],
+              "answer": "Managing small-scale global state"
+            },
+            {
+              "question": "Which state management solution is better for large-scale applications?",
+              "options": ["Redux", "React Context", "MobX"],
+              "answer": "Redux"
+            },
+            {
+              "question": "Which React feature is used to create a global state with Context?",
+              "options": ["Context API", "Hooks", "Reducers"],
+              "answer": "Context API"
+            }
+          ]
+        },
+        {
+          "name": "Optimizing State Management",
+          "points": 9,
+          "explanation": "Optimizing state management involves improving the efficiency and performance of how state is handled within an application. This includes minimizing unnecessary re-renders, using selectors to access state, and avoiding deep nesting of state objects. Properly optimized state management leads to faster and more responsive applications.",
+          "quiz": [
+            {
+              "question": "Why is it important to optimize state management?",
+              "options": [
+                "To improve performance and efficiency",
+                "To reduce code complexity",
+                "To enhance routing"
+              ],
+              "answer": "To improve performance and efficiency"
+            },
+            {
+              "question": "What technique can be used to prevent unnecessary re-renders in Redux?",
+              "options": [
+                "Using selectors",
+                "Using callbacks",
+                "Using reducers"
+              ],
+              "answer": "Using selectors"
+            },
+            {
+              "question": "Which hook helps to memoize values and prevent unnecessary re-renders?",
+              "options": ["useMemo()", "useEffect()", "useState()"],
+              "answer": "useMemo()"
+            }
+          ]
+        },
+        {
+          "name": "Persisting State",
+          "points": 10,
+          "explanation": "Persisting state involves saving the state of your application so that it can be restored when the user returns to the app. This is particularly useful for web applications that need to remember user preferences, shopping cart items, or other stateful information between sessions. Libraries like Redux Persist can be used to persist Redux state to localStorage or sessionStorage.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of persisting state?",
+              "options": [
+                "To save and restore application state between sessions",
+                "To improve performance",
+                "To handle side effects"
+              ],
+              "answer": "To save and restore application state between sessions"
+            },
+            {
+              "question": "Which storage options are commonly used for persisting state?",
+              "options": [
+                "localStorage and sessionStorage",
+                "IndexedDB and Cookies",
+                "Cache and Session"
+              ],
+              "answer": "localStorage and sessionStorage"
+            },
+            {
+              "question": "Which library is commonly used to persist Redux state?",
+              "options": ["Redux Persist", "React Persist", "MobX Persist"],
+              "answer": "Redux Persist"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Web Performance Optimization and Best Practices",
+      "subtopics": [
+        {
+          "name": "Lazy Loading",
+          "points": 5,
+          "explanation": "Lazy loading is a performance optimization technique where images, videos, or other media are loaded only when they are needed, such as when they are visible in the viewport. This reduces the initial page load time and improves the overall user experience.",
+          "quiz": [
+            {
+              "question": "What is the primary benefit of lazy loading?",
+              "options": [
+                "Reduced initial page load time",
+                "Enhanced animations",
+                "Better SEO"
+              ],
+              "answer": "Reduced initial page load time"
+            },
+            {
+              "question": "Which HTML attribute is used for lazy loading images?",
+              "options": ["loading='lazy'", "defer='lazy'", "async='lazy'"],
+              "answer": "loading='lazy'"
+            },
+            {
+              "question": "What type of content can benefit from lazy loading?",
+              "options": [
+                "Images, videos, and iframes",
+                "CSS stylesheets",
+                "JavaScript files"
+              ],
+              "answer": "Images, videos, and iframes"
+            }
+          ]
+        },
+        {
+          "name": "Caching Strategies",
+          "points": 6,
+          "explanation": "Caching strategies are techniques used to store copies of files, such as images, scripts, or data, locally on the user's device. This allows the content to be served quickly from the cache rather than re-downloading it from the server, reducing load times and bandwidth usage.",
+          "quiz": [
+            {
+              "question": "What is the primary purpose of caching?",
+              "options": [
+                "To improve load times and reduce bandwidth usage",
+                "To improve SEO",
+                "To enhance animations"
+              ],
+              "answer": "To improve load times and reduce bandwidth usage"
+            },
+            {
+              "question": "Which HTTP header is commonly used to control caching behavior?",
+              "options": ["Cache-Control", "Content-Type", "Authorization"],
+              "answer": "Cache-Control"
+            },
+            {
+              "question": "Which caching strategy involves serving content from the cache if it's available, otherwise fetching it from the network?",
+              "options": [
+                "Cache First",
+                "Network First",
+                "Stale While Revalidate"
+              ],
+              "answer": "Cache First"
+            }
+          ]
+        },
+        {
+          "name": "Critical Rendering Path",
+          "points": 7,
+          "explanation": "The Critical Rendering Path (CRP) is the sequence of steps that the browser takes to convert HTML, CSS, and JavaScript into pixels on the screen. Optimizing the CRP involves minimizing the amount of time it takes to render the first paint on the user's screen, improving the perceived performance of the webpage.",
+          "quiz": [
+            {
+              "question": "What does the Critical Rendering Path refer to?",
+              "options": [
+                "The sequence of steps to render content on the screen",
+                "The route taken by data packets",
+                "The order in which images are loaded"
+              ],
+              "answer": "The sequence of steps to render content on the screen"
+            },
+            {
+              "question": "Which aspect is crucial for optimizing the Critical Rendering Path?",
+              "options": [
+                "Minimizing the number of critical resources",
+                "Reducing the size of images",
+                "Improving SEO"
+              ],
+              "answer": "Minimizing the number of critical resources"
+            },
+            {
+              "question": "Which tool can help analyze the Critical Rendering Path?",
+              "options": ["Lighthouse", "PageSpeed Insights", "Web Vitals"],
+              "answer": "Lighthouse"
+            }
+          ]
+        },
+        {
+          "name": "Reduce HTTP Requests",
+          "points": 8,
+          "explanation": "Reducing the number of HTTP requests is a key performance optimization technique that involves minimizing the number of files the browser needs to download in order to render a webpage. This can be achieved by combining CSS and JavaScript files, using image sprites, and eliminating unnecessary resources.",
+          "quiz": [
+            {
+              "question": "Why is it important to reduce HTTP requests?",
+              "options": [
+                "To improve page load speed",
+                "To enhance animations",
+                "To improve SEO"
+              ],
+              "answer": "To improve page load speed"
+            },
+            {
+              "question": "Which technique can help reduce HTTP requests?",
+              "options": [
+                "Combining CSS and JavaScript files",
+                "Using multiple image formats",
+                "Adding more scripts"
+              ],
+              "answer": "Combining CSS and JavaScript files"
+            },
+            {
+              "question": "What is an image sprite?",
+              "options": [
+                "A single image containing multiple images",
+                "An image optimized for mobile devices",
+                "A responsive image"
+              ],
+              "answer": "A single image containing multiple images"
+            }
+          ]
+        },
+        {
+          "name": "Server-Side Rendering",
+          "points": 9,
+          "explanation": "Server-side rendering (SSR) is the process of rendering web pages on the server instead of the client's browser. This can improve performance, especially for users with slow connections or devices, and also enhance SEO by providing fully rendered pages to search engine crawlers.",
+          "quiz": [
+            {
+              "question": "What is the main benefit of server-side rendering?",
+              "options": [
+                "Improved performance and SEO",
+                "Enhanced animations",
+                "Better client-side interactivity"
+              ],
+              "answer": "Improved performance and SEO"
+            },
+            {
+              "question": "Which framework is commonly used for server-side rendering in React applications?",
+              "options": ["Next.js", "React Router", "Redux"],
+              "answer": "Next.js"
+            },
+            {
+              "question": "What does SSR stand for?",
+              "options": [
+                "Server-Side Rendering",
+                "Static Site Rendering",
+                "Server-Side Request"
+              ],
+              "answer": "Server-Side Rendering"
+            }
+          ]
+        },
+        {
+          "name": "Image Optimization",
+          "points": 8,
+          "explanation": "Image optimization involves reducing the file size of images without sacrificing quality. This helps to improve page load times and reduce bandwidth usage. Techniques include using the correct image format, compressing images, and using responsive images to deliver the right size for each device.",
+          "quiz": [
+            {
+              "question": "What is the main goal of image optimization?",
+              "options": [
+                "To reduce file size and improve load times",
+                "To improve image quality",
+                "To enhance animations"
+              ],
+              "answer": "To reduce file size and improve load times"
+            },
+            {
+              "question": "Which image format is best suited for photographs?",
+              "options": ["JPEG", "PNG", "GIF"],
+              "answer": "JPEG"
+            },
+            {
+              "question": "Which tool can be used for compressing images?",
+              "options": ["ImageOptim", "Photoshop", "GIMP"],
+              "answer": "ImageOptim"
+            }
+          ]
+        },
+        {
+          "name": "Web Vitals",
+          "points": 10,
+          "explanation": "Web Vitals are a set of metrics defined by Google that measure key aspects of user experience, such as loading performance, interactivity, and visual stability. These metrics are crucial for understanding and optimizing the real-world performance of web pages.",
+          "quiz": [
+            {
+              "question": "What do Web Vitals measure?",
+              "options": [
+                "Loading performance, interactivity, and visual stability",
+                "SEO performance",
+                "Server response time"
+              ],
+              "answer": "Loading performance, interactivity, and visual stability"
+            },
+            {
+              "question": "Which metric measures the time it takes for a page's main content to load?",
+              "options": [
+                "Largest Contentful Paint (LCP)",
+                "First Input Delay (FID)",
+                "Cumulative Layout Shift (CLS)"
+              ],
+              "answer": "Largest Contentful Paint (LCP)"
+            },
+            {
+              "question": "Which tool can be used to measure Web Vitals?",
+              "options": ["Google PageSpeed Insights", "Photoshop", "GIMP"],
+              "answer": "Google PageSpeed Insights"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Testing and Debugging Techniques",
+      "subtopics": [
+        {
+          "name": "Unit Testing",
+          "points": 4,
+          "explanation": "Unit testing involves testing individual components or functions of your application in isolation to ensure they work as expected. Unit tests are typically automated and help catch bugs early in the development process, making it easier to maintain and refactor code.",
+          "quiz": [
+            {
+              "question": "What is the main purpose of unit testing?",
+              "options": [
+                "To test individual components in isolation",
+                "To test the entire application",
+                "To test the UI"
+              ],
+              "answer": "To test individual components in isolation"
+            },
+            {
+              "question": "Which tool is commonly used for unit testing in JavaScript?",
+              "options": ["Jest", "Selenium", "Cypress"],
+              "answer": "Jest"
+            },
+            {
+              "question": "Which method is used to define a test case in Jest?",
+              "options": ["test()", "describe()", "it()"],
+              "answer": "test()"
+            }
+          ]
+        },
+        {
+          "name": "Integration Testing",
+          "points": 5,
+          "explanation": "Integration testing involves testing multiple components or systems together to ensure they work correctly as a whole. This type of testing focuses on the interactions between components, helping to identify issues that may arise when different parts of the application are combined.",
+          "quiz": [
+            {
+              "question": "What is the focus of integration testing?",
+              "options": [
+                "Testing interactions between components",
+                "Testing individual components in isolation",
+                "Testing the UI"
+              ],
+              "answer": "Testing interactions between components"
+            },
+            {
+              "question": "Which tool is commonly used for integration testing in JavaScript?",
+              "options": ["Jest", "Selenium", "Cypress"],
+              "answer": "Selenium"
+            },
+            {
+              "question": "Which method is commonly used to simulate user interactions in integration tests?",
+              "options": ["simulate()", "trigger()", "fireEvent()"],
+              "answer": "simulate()"
+            }
+          ]
+        },
+        {
+          "name": "End-to-End Testing",
+          "points": 6,
+          "explanation": "End-to-end (E2E) testing involves testing the entire application from start to finish, simulating real user interactions. E2E tests ensure that the application behaves as expected in a production-like environment, covering all aspects of the user experience.",
+          "quiz": [
+            {
+              "question": "What is the primary goal of end-to-end testing?",
+              "options": [
+                "To test the entire application as a whole",
+                "To test individual components",
+                "To test the UI in isolation"
+              ],
+              "answer": "To test the entire application as a whole"
+            },
+            {
+              "question": "Which tool is commonly used for end-to-end testing?",
+              "options": ["Cypress", "Jest", "Enzyme"],
+              "answer": "Cypress"
+            },
+            {
+              "question": "Which method is used to navigate to a new page in Cypress?",
+              "options": ["cy.visit()", "cy.go()", "cy.navigate()"],
+              "answer": "cy.visit()"
+            }
+          ]
+        },
+        {
+          "name": "Debugging in Chrome",
+          "points": 3,
+          "explanation": "Debugging in Chrome involves using the Chrome DevTools to inspect and debug your code directly in the browser. Chrome DevTools provides a powerful set of tools for identifying and fixing issues, such as breakpoints, watch expressions, and performance profiling.",
+          "quiz": [
+            {
+              "question": "Which tool is used for debugging JavaScript in Chrome?",
+              "options": [
+                "Chrome DevTools",
+                "Visual Studio Code",
+                "Sublime Text"
+              ],
+              "answer": "Chrome DevTools"
+            },
+            {
+              "question": "Which feature in Chrome DevTools allows you to pause code execution?",
+              "options": ["Breakpoints", "Watch Expressions", "Console"],
+              "answer": "Breakpoints"
+            },
+            {
+              "question": "Which panel in Chrome DevTools is used to analyze the performance of a webpage?",
+              "options": ["Performance", "Elements", "Sources"],
+              "answer": "Performance"
+            }
+          ]
+        },
+        {
+          "name": "Jest Basics",
+          "points": 7,
+          "explanation": "Jest is a popular JavaScript testing framework that makes it easy to write and run tests for your application. Jest provides a wide range of features, including test runners, assertions, and mocking capabilities, making it an excellent choice for testing React applications.",
+          "quiz": [
+            {
+              "question": "What is Jest primarily used for?",
+              "options": [
+                "Testing JavaScript applications",
+                "Debugging code",
+                "Managing state"
+              ],
+              "answer": "Testing JavaScript applications"
+            },
+            {
+              "question": "Which method is used to group related tests in Jest?",
+              "options": ["describe()", "test()", "it()"],
+              "answer": "describe()"
+            },
+            {
+              "question": "Which Jest method is used to mock a function?",
+              "options": ["jest.fn()", "jest.mock()", "jest.spy()"],
+              "answer": "jest.fn()"
+            }
+          ]
+        },
+        {
+          "name": "React Testing Library",
+          "points": 8,
+          "explanation": "React Testing Library is a testing utility that helps you write tests for your React components. It focuses on testing the component from the user's perspective by interacting with the rendered output and simulating user actions. React Testing Library encourages writing tests that are more maintainable and less coupled to the component's internal implementation.",
+          "quiz": [
+            {
+              "question": "What is the primary focus of React Testing Library?",
+              "options": [
+                "Testing components from the user's perspective",
+                "Testing internal implementation details",
+                "Testing state management"
+              ],
+              "answer": "Testing components from the user's perspective"
+            },
+            {
+              "question": "Which method is used to render a component for testing?",
+              "options": ["render()", "mount()", "shallow()"],
+              "answer": "render()"
+            },
+            {
+              "question": "Which method is used to simulate user actions in React Testing Library?",
+              "options": ["fireEvent()", "trigger()", "simulate()"],
+              "answer": "fireEvent()"
+            }
+          ]
+        },
+        {
+          "name": "Cypress Basics",
+          "points": 9,
+          "explanation": "Cypress is an end-to-end testing framework that allows you to write tests that interact with your application just like a real user would. Cypress provides an intuitive API for simulating user interactions, such as clicking buttons and filling out forms, and includes built-in tools for debugging and inspecting your tests as they run.",
+          "quiz": [
+            {
+              "question": "What is the primary use of Cypress?",
+              "options": [
+                "End-to-end testing",
+                "Unit testing",
+                "Integration testing"
+              ],
+              "answer": "End-to-end testing"
+            },
+            {
+              "question": "Which method is used to simulate a button click in Cypress?",
+              "options": ["cy.click()", "cy.press()", "cy.trigger()"],
+              "answer": "cy.click()"
+            },
+            {
+              "question": "Which Cypress method is used to select an element by its class name?",
+              "options": [
+                "cy.get('.className')",
+                "cy.find('.className')",
+                "cy.select('.className')"
+              ],
+              "answer": "cy.get('.className')"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scoreThresholds": {
+    "green": 219,
+    "yellow": 74,
+    "red": 0
+  }
+}
