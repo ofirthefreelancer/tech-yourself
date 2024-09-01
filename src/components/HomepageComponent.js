@@ -58,8 +58,7 @@ const HomepageComponent = ({ onSelectTopic }) => {
               textAlign: "left",
             }}
           >
-            <strong>Choose a Topic:</strong> Select a topic from the homepage,
-            such as "Front-End" or "Back-End."
+            <strong>Choose a Topic:</strong> Select a topic from the homepage.
             <br />
             <br />
             <strong>Tech-Yourself:</strong> Dive into the selected topic, rate

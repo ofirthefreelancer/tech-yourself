@@ -22,8 +22,8 @@ A step-by-step series of examples that tell you how to get a development environ
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/ofirthefreelancer/my-front-end-score.git
-   cd my-front-end-score
+   git clone https://github.com/ofirthefreelancer/tech-yourself.git
+   cd tech-yourself
 
    ```
 
@@ -60,13 +60,13 @@ Deploy the built app to your preferred hosting service, such as Vercel, Netlify,
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/ofirthefreelancer/my-front-end-score/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/ofirthefreelancer/tech-yourself/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
 - **Ofir Cohen** - _Initial work_ - [Ofir The Freelancer](https://github.com/ofirthefreelancer)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of contributors who participated in this project.
 
 ## License
 
