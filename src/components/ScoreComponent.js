@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form, Spinner } from "react-bootstrap";
-import { animated } from "@react-spring/web";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import QuizModal from "./QuizModal"; // Import the QuizModal component
@@ -80,9 +79,9 @@ const ScoreComponent = ({
         borderRadius: "10px",
       }}
     >
-      <animated.h1 style={{ ...slideInProps, color: getColor() }}>
+      <h1 style={{ ...slideInProps, color: getColor() }}>
         Score: {displayScore}
-      </animated.h1>
+      </h1>
 
       <div>
         <h3 style={{ color: "#ffffff" }}>Test Yourself</h3>
