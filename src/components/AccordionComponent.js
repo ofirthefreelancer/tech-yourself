@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Accordion, Form, Button } from "react-bootstrap";
+import { Accordion, Form, Button, Spinner } from "react-bootstrap";
 
 const AccordionComponent = ({ onShowScore, buttons, topicJson, onBack }) => {
   const [topics, setTopics] = useState([]);
@@ -7,16 +7,17 @@ const AccordionComponent = ({ onShowScore, buttons, topicJson, onBack }) => {
   const [refreshThreshold, setRefreshThreshold] = useState(5);
   const [scoreThresholds, setScoreThresholds] = useState({});
   const [selectedSubtopics, setSelectedSubtopics] = useState({});
+  const [loading, setLoading] = useState(true); // Loading state
   const accordionRefs = useRef([]); // Array to hold refs for each Accordion.Item
 
   const storageKey = `selectedSubtopics-${topicJson}`; // Unique storage key for each topic
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true); // Set loading to true before starting fetch
+
       try {
-        const response = await fetch(
-          `${process.env.PUBLIC_URL}/topics/${topicJson}`
-        );
+        const response = await fetch(`/topics/${topicJson}`);
         const data = await response.json();
 
         setTopics(data.topics);
@@ -30,11 +31,13 @@ const AccordionComponent = ({ onShowScore, buttons, topicJson, onBack }) => {
         }
       } catch (error) {
         console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false); // Set loading to false once fetch is complete
       }
     };
 
     fetchData();
-  }, [topicJson]);
+  }, [topicJson]); // Dependency array with topicJson ensures fetch runs only when topicJson changes
 
   const handleRangeChange = (topicIndex, subtopicIndex, value) => {
     const key = `${topicIndex}-${subtopicIndex}`;
@@ -91,6 +94,18 @@ const AccordionComponent = ({ onShowScore, buttons, topicJson, onBack }) => {
 
     return { totalScore, unselectedTopics, scoreCategory };
   };
+
+  if (loading) {
+    // Display a loading spinner while fetching data
+    return (
+      <div className="text-center mt-4">
+        <Spinner style={{ color: "white" }} animation="border" role="status">
+          <span className="sr-only"></span>
+        </Spinner>
+        <p style={{ color: "white" }}>Loading data...</p>
+      </div>
+    );
+  }
 
   return (
     <div
